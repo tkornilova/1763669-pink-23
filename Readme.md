@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент: [Татьяна](https://up.htmlacademy.ru/adaptive/23/user/1763669).
-* Наставник: `Неизвестно`.
+* Наставник: [Татьяна Симоненко](https://htmlacademy.ru/profile/tatien).
 
 ---
 
