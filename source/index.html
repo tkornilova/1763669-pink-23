@@ -20,7 +20,10 @@
         </svg>
       </a>
       <nav class="main-nav">
-        <button class="main-nav__button-menu visually-hidden"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-nav__button-menu">
+          <span class="visually-hidden">Открыть меню</span>
+          <img src="img/icon-button-open.svg" alt="Иконка открытия меню">
+        </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
@@ -39,7 +42,7 @@
         </div>
       </nav>
     </div>
-    <p class="page-header__slogan">Взгляните<br>на жизнь<br>иначе!</p>
+    <p class="page-header__slogan">Взгляните на жизнь<br>иначе!</p>
   </header>
 
   <main class="main-content-index">
@@ -72,20 +75,23 @@
 
     <section class="suggestions">
       <h2 class="visually-hidden">Чем мы можем помочь?</h2>
-      <p class="suggestions__slogan">Устали от серости мегаполиса?<br>Нам есть, что вам предложить!</p>
+      <div class="suggestions__slogan">
+        <p>Устали от серости мегаполиса?</p>
+        <p>Нам есть, что вам предложить!</p>
+      </div>
       <div class="suggestions__wrapper">
         <ul class="suggestions__list">
           <li class="suggestions__item">
             <h3 class="suggestions__title">Поднимает настроение</h3>
-            <p class="suggestions__description">Приложение позволит вам победить<br>осеннюю хандру и депрессию буквально в<br>несколько кликов!</p>
+            <p class="suggestions__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </li>
           <li class="suggestions__item">
             <h3 class="suggestions__title">Меняет мир вокруг</h3>
-            <p class="suggestions__description">Сделайте снимок и украсьте его смайликом<br>или текстовой подписью, чтобы<br>усилить эффект</p>
+            <p class="suggestions__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </li>
           <li class="suggestions__item">
             <h3 class="suggestions__title">Заводит новых друзей</h3>
-            <p class="suggestions__description">Ставьте лайки, комментируйте, делитесь<br>фотографиями с друзьями и заводите новых</p>
+            <p class="suggestions__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
       </div>
@@ -110,13 +116,13 @@
       <blockquote class="reviews__comment">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
       <ul class="reviews__list">
         <li class="reviews__item">
-          <button class="reviews__button reviews__button--current visually-hidden">1</button>
+          <button class="reviews__button reviews__button--current">1</button>
         </li>
         <li class="reviews__item">
-          <button class="reviews__button visually-hidden">2</button>
+          <button class="reviews__button">2</button>
         </li>
         <li class="reviews__item">
-          <button class="reviews__button visually-hidden">3</button>
+          <button class="reviews__button">3</button>
         </li>
       </ul>
     </section>

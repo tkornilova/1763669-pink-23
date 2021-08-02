@@ -1,41 +1,42 @@
 .page-header {
-  width: 100%;
-  background-color: @basic-black-opacity30;
+  width: 320px;
+  margin: 0 auto;
+  background-image: url(../../img/header-bg-phone.png), url(../../img/header-bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-color: @main-gray;
   text-align: center;
+  position: relative;
 }
 
 .page-header-wrapper {
   width: 100%;
+  background-color: @basic-black-opacity30;
   display: flex;
   justify-content: space-between;
-  padding-top: 27px;
-  padding-bottom: 43px;
+  align-items: center;
+  padding: 21px 20px;
   box-sizing: border-box;
+  position: absolute;
 }
 
 .main-nav__list {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  margin: 0;
-  padding: 0;
+  display: none;
 }
 
-.man-nav__item {
-  padding-right: 78px; //не работает
-}
-
-.main-nav__link {
-  font-size: 18px;
-  line-height: 18px;
-  color: @basic-white;
+.main-nav__button-menu {
+  border: none;
+  background-color: transparent;
 }
 
 .page-header__slogan {
-  font-size: 50px;
-  line-height: 68px;
+  font-size: 24px;
+  line-height: 33px;
   font-weight: 300;
   color: @basic-white;
   margin: 0;
-  padding: 0;
+  padding-top: 95px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 320px;
 }
