@@ -2,7 +2,14 @@
   width: 320px;
   margin: 0 auto;
   background-color: @main-gray;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 28px;
+  padding-bottom: 38px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
 }
 
 .site-description__button-upload {
@@ -14,14 +21,11 @@
   border-radius: 29px;
   background-color: transparent;
   padding: 21px 38px;
-  margin-top: 28px;
-  margin-left: auto; //не выравнивается посередине
-  margin-right: auto;
-  margin-bottom: 32px;
+  margin-bottom: 38px;
   box-sizing: border-box;
 }
 
-.upload__list {
+.site-description__upload-list {
   width: 204px;
   min-height: 56px;
   display: flex;
@@ -29,19 +33,19 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  box-sizing: border-box;
+  margin-top: 0;
+  margin-bottom: 28px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 28px;
-  margin-top: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-.upload__description {
+.site-description__upload-description {
   font-size: 14px;
   line-height: 24px;
   color: @basic-white;
   text-align: center;
-  padding-bottom: 38px;
+  padding: 0;
   margin: 0;
 }

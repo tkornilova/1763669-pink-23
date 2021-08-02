@@ -1,42 +1,58 @@
 .editor {
-  width: 100%;
+  width: 320px;
   margin: 0 auto;
 }
 
 .editor__slogan {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 30px;
   text-align: center;
+  padding: 50px 20px;
+  margin: 0;
 }
 
 .editor__photo {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   background-color: @gray-light;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 40px;
 }
 
-.editor__photo-parameters div {
-  border-bottom: 1px solid @main-gray-opacity10;
+.editor__photo-img {
+  width: 280px;
+  height: 374px;
+  padding-bottom: 43px;
 }
 
-.editor__photo-parameters div:last-child {
-  border-bottom: none;
+.editor__photo-parameters {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 114px;
 }
 
-.parameters__button  button{
+.editor__button button {
   font-size: 18px;
   line-height: 18px;
+  width: 280px;
+  height: 55px;
   background-color: transparent;
   border: 3px solid;
   border-radius: 30px;
 }
 
-.parameters__button-post {
+.editor__button-post {
   color: @pink;
   border-color: @pink;
+  margin-bottom: 12px;
 }
 
-.parameters__button-cancel {
+.editor__button-cancel {
   color: @main-gray-opacity10;
   border-color: @main-gray-opacity10;
 }
