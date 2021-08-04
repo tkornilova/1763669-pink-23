@@ -1,5 +1,6 @@
 .price {
   width: 320px;
+  height: 506px;
   margin: 0 auto;
   background-image: url(../../img/gray-bg.png);
   background-color: @basic-white;
@@ -7,16 +8,33 @@
   background-size: 1214px 506px;
   text-align: center;
   padding: 0;
+  overflow: hidden;
+  position: relative;
 }
 
 .price__table {
   border-collapse: collapse;
+  position: absolute;
+  right: -161px;
+  width: 840px;
+  bottom: 55px;
+}
+
+.price__table tr,
+.price__table td {
+  width: 280px;
+  height: 59px;
+  box-sizing: border-box;
 }
 
 .price__column-description-top {
   background-color: @main-gray;
   color: @basic-white;
   border-collapse: collapse;
+  padding-top: 19px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 35px;
 }
 
 .price__column-white {
@@ -25,21 +43,27 @@
   border-radius: 1px 0px 0px 0px;
 }
 
-
 .price__column-description b {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .price__column-description p {
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
+  margin: 0;
 }
 
 .price__column-description-left {
   font-size: 18px;
   line-height: 30px;
   color: @main-gray;
+}
+
+.price__list {
+  margin: 0;
+  padding: 0;
 }
