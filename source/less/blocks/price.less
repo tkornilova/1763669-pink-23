@@ -36,7 +36,7 @@
 .price__table {
   border-collapse: collapse;
   position: absolute;
-  right: -161px;
+  right: -126px;
   width: 840px;
   bottom: 55px;
   margin: 0 auto;
@@ -95,17 +95,44 @@
   }
 }
 
-.price__column-white {
+.price__column-white,
+.price__column-parameter {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 300px;
   background-color: @basic-white;
   border: 2px solid @gray-table-border;
   border-radius: 1px 0 0 0;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
+}
+
+.price__column-parameter {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 22px;
+  }
 }
 
 .price__column-description b {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
+  padding-bottom: 15px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
@@ -113,7 +140,7 @@
 }
 
 .price__column-description p {
-  font-size: 24px;
+  font-size: 14px;
   line-height: 30px;
   font-weight: 300;
   margin: 0;
@@ -121,12 +148,48 @@
   @media (min-width: @tablet-width) {
     font-size: 18px;
   }
+
+  @media (min-width: @desktop-width) {
+    font-size: 24px;
+  }
 }
 
 .price__column-description-left {
   font-size: 18px;
   line-height: 30px;
   color: @main-gray;
+}
+
+.price__column-hidden {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 21px;
+  padding-left: 20px;
+  padding-right: 17px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+}
+
+.price__column-hidden p {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 .price__list {
