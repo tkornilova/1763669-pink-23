@@ -2,6 +2,19 @@
   width: 320px;
   margin: 0 auto;
   padding-top: 54px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    padding-bottom: 50px;
+  }
 }
 
 .panorama__slogan {
@@ -9,17 +22,53 @@
   line-height: 30px;
   text-align: center;
   padding-bottom: 60px;
-  margin: 0;
+  padding-left: 35px;
+  padding-right: 35px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    padding-bottom: 85px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 97px;
+    padding-left: 280px;
+    padding-right: 280px;
+  }
 }
 
 .panorama__section-photo {
   position: relative;
   width: 320px;
   height: 135px;
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
+    height: 509px;
+    overflow: hidden;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    height: 506px;
+  }
 }
 
 .panorama__img {
-  width: 100%;
+  width: 320px;
+
+  @media (min-width: @tablet-width) {
+    width: unset;
+    object-position: -260px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    object-position: center;
+  }
 }
 
 .panorama__button {
@@ -34,52 +83,119 @@
   box-sizing: border-box;
   position: absolute;
   right: 20px;
+
+  @media (min-width: @tablet-width) {
+    top: 57px;
+    right: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 54px;
+    right: 130px;
+  }
 }
 
 .panorama__comment {
+  width: 280px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  text-align: left;
+  flex-wrap: wrap;
   background-color: @gray-light;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 0 auto;
   padding: 25px 17px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+    padding: 31px 30px;
+    flex-direction: row;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+    padding: 31px 29px;
+    flex-direction: row;
+    margin: 0 auto;
+  }
 }
 
 .panorama__comment p {
   margin: 0;
-  padding: 0;
 }
 
-.panorama__comment-top {
+.panorama__comment-user,
+.panorama__comment-likes {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.panorama__comment-top-name {
+.panorama__comment-user {
+  order: 1;
+  padding-bottom: 14px;
+}
+
+.panorama__comment-user-name {
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
+  padding-right: 3px;
 }
 
-.panorama__comment-top-time {
+.panorama__comment-user-time {
   font-size: 12px;
   line-height: 24px;
   font-weight: 300;
   text-transform: uppercase;
+  order: 3;
+
+  @media (min-width: @tablet-width) {
+    order: 2;
+  }
 }
 
-.panorama__comment-top-likes {
+.panorama__comment-likes {
+  order: 3;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.panorama__comment-likes-quantity {
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
   color: @pink;
+  order: 2;
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+    padding-right: 16px;
+  }
 }
 
-.panorama__comment-bottom {
+.panorama__comment-likes-img {
+  padding-right: 18px;
+
+  @media (min-width: @tablet-width) {
+    order: 2;
+    padding-right: 0;
+  }
+}
+
+.panorama__comment-text {
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
-  text-align: center;
+  text-align: left;
+  order: 2;
+  padding-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    order: 3;
+    padding-bottom: 0;
+  }
 }

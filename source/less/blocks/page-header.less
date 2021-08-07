@@ -21,6 +21,7 @@
   text-align: center;
   position: relative;
 
+
   @media (min-width: @tablet-width) {
     width: 660px;
     height: 729px;
@@ -123,5 +124,53 @@
     padding-left: 130px;
     padding-right: 766px;
     box-sizing: border-box;
+  }
+}
+
+// Catalog
+
+.page-header__wrapper-catalog {
+  height: 237px;
+  background-image: url("../../img/header-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: @main-gray;
+  text-align: center;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    height: 437px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 394px;
+  }
+}
+
+.page-header__title {
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 300;
+  color: @basic-white;
+  text-align: center;
+  margin: 0;
+  padding-top: 102px;
+  padding-left: 40px;
+  padding-right: 40px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    font-size: 50px;
+    line-height: 68px;
+    padding-top: 191px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 184px;
+    padding-left: 250px;
+    padding-right: 250px;
   }
 }
