@@ -1,18 +1,37 @@
 .form-button {
   width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   margin: 0 auto;
   padding-top: 0;
   padding-bottom: 26px;
   padding-left: 22px;
   padding-right: 22px;
   box-sizing: border-box;
-  order: 6;
+  order: 7;
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
+    flex-direction: row;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    padding-bottom: 2px;
+    padding-left: 132px;
+    padding-right: 129px;
+  }
 }
 
 .form-button button {
   width: 276px;
   height: 59px;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   color: @basic-white;
@@ -23,6 +42,11 @@
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+    width: 296px;
+  }
 }
 
 .form-button p {
