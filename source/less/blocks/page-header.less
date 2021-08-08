@@ -127,9 +127,10 @@
   }
 }
 
-// Catalog
+// Catalog, Form
 
-.page-header__wrapper-catalog {
+.page-header__wrapper-catalog,
+.page-header__wrapper-form {
   height: 237px;
   background-image: url("../../img/header-bg.png");
   background-repeat: no-repeat;
@@ -155,14 +156,20 @@
   color: @basic-white;
   text-align: center;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+
+.page-header__title-catalog {
   padding-top: 102px;
   padding-left: 40px;
   padding-right: 40px;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    font-size: 50px;
-    line-height: 68px;
     padding-top: 191px;
     padding-left: 40px;
     padding-right: 40px;
@@ -172,5 +179,24 @@
     padding-top: 184px;
     padding-left: 250px;
     padding-right: 250px;
+  }
+}
+
+.page-header__title-form {
+  padding-top: 102px;
+  padding-left: 40px;
+  padding-right: 40px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 191px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 184px;
+    padding-left: 220px;
+    padding-right: 220px;
   }
 }

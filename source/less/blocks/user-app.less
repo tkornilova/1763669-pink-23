@@ -7,13 +7,44 @@
   padding-left: 22px;
   padding-right: 22px;
   box-sizing: border-box;
-  order: 4;
+  order: 5;
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
+    background-color: transparent;
+    padding-bottom: 65px;
+    padding-left: 22px;
+    padding-right: 22px;
+    box-sizing: border-box;
+    order: 3;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 431px;
+    background-color: transparent;
+    padding-bottom: 69px;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+    order: 3;
+  }
 }
 
 .user-app__fieldset {
   border: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    border: 2px solid @gray-table-border;
+    padding: 66px 120px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 66px 133px;
+    width: 431px;
+  }
 }
 
 .user-app__fieldset legend {
@@ -23,12 +54,30 @@
   text-transform: uppercase;
   padding-bottom: 52px;
   text-align: center;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    line-height: 30px;
+    padding: 0 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 318px;
+  }
 }
 
 .user-app__fieldset p {
   margin: 0;
   padding-left: 25px;
   padding-bottom: 62px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 200px;
+  }
 }
 
 .user-app__fieldset p:last-of-type {
