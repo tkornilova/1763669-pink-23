@@ -36,21 +36,32 @@
   border: 3px solid @basic-white;
   border-radius: 29px;
   background-color: transparent;
-  padding: 21px 30px;
+  width: 280px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 38px;
   box-sizing: border-box;
   cursor: pointer;
 
+  &:hover,
+  &:focus {
+    background-color: @basic-white;
+    color: @pink;
+  }
+
+  &:active {
+    color: @pink-opacity30;
+  }
+
   @media (min-width: @tablet-width) {
-    padding: 21px 48px;
-    margin-bottom: 51px;
-    box-sizing: border-box;
+    width: 300px;
+    margin-bottom: 46px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 21px 30px;
     margin-bottom: 67px;
-    box-sizing: border-box;
   }
 }
 
@@ -70,13 +81,14 @@
   padding: 0;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 58px;
+    margin-bottom: 38px;
   }
 }
 
 .site-description__upload-description {
   font-size: 14px;
   line-height: 24px;
+  font-weight: 300;
   color: @basic-white;
   text-align: center;
   padding: 0;
