@@ -1,19 +1,12 @@
 .suggestions {
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
   padding: 0;
-
-  @media (min-width: @tablet-width) {
-    width: 660px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 1200px;
-  }
 }
 
 .suggestions__slogan {
+  width: 320px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
@@ -25,6 +18,7 @@
   padding-right: 20px;
   box-sizing: border-box;
   background-color: transparent;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     width: 660px;
@@ -71,15 +65,10 @@
   background-repeat: no-repeat;
   background-position: bottom, center;
   background-size: auto, cover;
-  padding-top: 53px;
-  padding-bottom: 325px;
-  padding-left: 20px;
-  padding-right: 20px;
-  box-sizing: border-box;
-  margin: 0;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    background-position: 46px 33px, center;
+    background-position: 46px 33px, 50% 0;
     background-size: 268px 547px, cover;
     padding-bottom: 49px;
   }
@@ -88,30 +77,37 @@
     background-image: url("../../img/suggestions-bg-phone-shadow-1.png"), url("../../img/suggestions-bg-phone-shadow-2.png"), url("../../img/suggestions-bg-phone-shadow-3.png"), url("../../img/gray-bg.png");
     background-color: @basic-white;
     background-repeat: no-repeat;
-    background-position: 164px 80px, 464px 80px, 760px 80px, 0 50px;
+    background-position: 164px 20px, 464px 20px, 760px 20px, 0 50px;
     background-size: auto, auto, auto, cover;
     padding-bottom: 59px;
   }
 }
 
 .suggestions__list {
-  margin: 0;
-  padding: 0;
+  width: 320px;
+  padding-top: 53px;
+  padding-bottom: 325px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
+    width: 660px;
     padding-left: 330px;
+    padding-bottom: 0;
     text-align: left;
   }
 
   @media (min-width: @desktop-width) {
+    width: 883px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-top: 360px;
-    padding-left: 160px;
-    padding-right: 154px;
+    padding-left: 0;
+    padding-right: 0;
     text-align: center;
-    width: 883px;
   }
 }
 

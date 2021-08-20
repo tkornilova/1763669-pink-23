@@ -1,34 +1,33 @@
 .article {
-  width: 320px;
   margin: 0 auto;
   display: none;
 
   @media (min-width: @tablet-width) {
     display: block;
-    width: 660px;
-    padding: 54px 20px;
-    box-sizing: border-box;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1200px;
     background-color: @gray-light;
-    padding-top: 17px;
-    padding-bottom: 67px;
-    padding-left: 131px;
-    padding-right: 166px;
   }
 }
 
 .article__wrapper {
   @media (min-width: @tablet-width) {
+    width: 660px;
+    padding: 54px 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
-    width: 903px;
+    width: 1200px;
+    padding-top: 17px;
+    padding-bottom: 67px;
+    padding-left: 131px;
+    padding-right: 166px;
   }
 }
 
