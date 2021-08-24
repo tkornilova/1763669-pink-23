@@ -74,7 +74,7 @@
   }
 }
 
-.editor__photo-parameters {
+.editor__photo-parameters-list {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -153,6 +153,16 @@
   }
 }
 
+.editor__photo-parameters-icon:hover path,
+.editor__photo-parameters-icon:focus path {
+  fill: @main-gray-opacity30;
+}
+
+.editor__photo-parameters-icon:active path {
+  fill: @main-gray-opacity50;
+}
+
+
 .editor__button {
   @media (min-width: @desktop-width) {
     width: 410px;
@@ -183,6 +193,16 @@
   border-color: @pink;
   margin-bottom: 12px;
 
+  &:hover,
+  &:focus {
+    background-color: @pink;
+    color: @basic-white;
+  }
+
+  &:active {
+    color: @basic-white-opacity30;
+  }
+
   @media (min-width: @desktop-width) {
     margin-bottom: 0;
   }
@@ -191,4 +211,15 @@
 .editor__button-cancel {
   color: @main-gray-opacity10;
   border-color: @main-gray-opacity10;
+
+  &:hover,
+  &:focus {
+    border-color: @main-gray-opacity30;
+    color: @main-gray-opacity30;
+  }
+
+  &:active {
+    color: @basic-white-opacity10;
+    background-color: @main-gray-opacity30;
+  }
 }
