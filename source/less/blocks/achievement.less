@@ -7,7 +7,7 @@
   padding-left: 22px;
   padding-right: 22px;
   box-sizing: border-box;
-  order: 3;
+  order: 2;
 
   @media (min-width: @tablet-width) {
     width: 660px;
@@ -15,14 +15,16 @@
     padding-bottom: 51px;
     padding-left: 22px;
     padding-right: 22px;
-    order: 5;
+    order: 4;
   }
 
   @media (min-width: @desktop-width) {
     width: 936px;
     background-color: transparent;
     padding-bottom: 64px;
-    order: 5;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
   }
 }
 
@@ -43,6 +45,7 @@
     justify-content: flex-start;
     align-items: center;
     padding: 54px 60px;
+    border: 2px solid @gray-table-border;
   }
 }
 
