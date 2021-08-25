@@ -110,4 +110,64 @@
 .user-app__fieldset-item label {
   font-size: 18px;
   line-height: 30px;
+  padding-left: 40px;
+  position: relative;
+  cursor: pointer;
+}
+
+
+.user-app__fieldset-item label::before {
+  content: url("../../img/button-radio-empty.svg");
+  width: 37px;
+  height: 37px;
+  position: absolute;
+  left: -16px;
+  top: -8px;
+}
+
+.user-app__fieldset-item label:hover::before,
+.user-app__fieldset-item label:focus::before {
+  content: url("../../img/button-radio-empty-hover.svg");
+  width: 37px;
+  height: 37px;
+  position: absolute;
+  left: -16px;
+  top: -8px;
+}
+
+.user-app__fieldset-item label:active::before {
+  content: url("../../img/button-radio-empty-active.svg");
+  width: 37px;
+  height: 37px;
+  position: absolute;
+  left: -16px;
+  top: -8px;
+}
+
+.user-app__fieldset-input:checked label::before {
+  content: url("../../img/button-radio-check.svg");
+  width: 37px;
+  height: 37px;
+  position: absolute;
+  left: -16px;
+  top: -8px;
+}
+
+.user-app__fieldset-input:checked label:hover::before,
+.user-app__fieldset-input:checked label:focus::before {
+  content: url("../../img/button-radio-check-hover.svg");
+  width: 37px;
+  height: 37px;
+  position: absolute;
+  left: -16px;
+  top: -8px;
+}
+
+.user-app__fieldset-input:checked label:focus::before {
+  content: url("../../img/button-radio-check-active.svg");
+  width: 37px;
+  height: 37px;
+  position: absolute;
+  left: -16px;
+  top: -8px;
 }

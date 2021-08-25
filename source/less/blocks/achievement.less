@@ -91,4 +91,63 @@
 .achievement__item label {
   font-size: 18px;
   line-height: 30px;
+  padding-left: 75px;
+  position: relative;
+  cursor: pointer;
+}
+
+.achievement__item label::before {
+  content: url("../../img/button-checkbox-empty.svg");
+  width: 37px;
+  height: 37px;
+  position: absolute;
+  left: 22px;
+  top: -8px;
+}
+
+.achievement__item label:hover::before,
+.achievement__item label:focus::before {
+  content: url("../../img/button-checkbox-empty-hover.svg");
+  width: 37px;
+  height: 37px;
+  position: absolute;
+  left: 22px;
+  top: -8px;
+}
+
+.achievement__item label:active::before {
+  content: url("../../img/button-checkbox-empty-active.svg");
+  width: 37px;
+  height: 37px;
+  position: absolute;
+  left: 22px;
+  top: -8px;
+}
+
+.achievement__item-input:checked label::before {
+  content: url("../../img/button-checkbox-check.svg");
+  width: 37px;
+  height: 37px;
+  position: absolute;
+  left: 22px;
+  top: -8px;
+}
+
+.achievement__item-input:checked label:hover::before,
+.achievement__item-input:checked label:focus::before {
+  content: url("../../img/button-checkbox-check-hover.svg");
+  width: 37px;
+  height: 37px;
+  position: absolute;
+  left: 22px;
+  top: -8px;
+}
+
+.achievement__item-input:checked label:active::before {
+  content: url("../../img/button-checkbox-check-active.svg");
+  width: 37px;
+  height: 37px;
+  position: absolute;
+  left: 22px;
+  top: -8px;
 }

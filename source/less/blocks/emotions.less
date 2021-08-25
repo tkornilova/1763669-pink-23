@@ -71,6 +71,15 @@
   box-sizing: border-box;
   font-family: inherit;
 
+  &:hover,
+  &:focus {
+    border-color: @main-gray;
+  }
+
+  &:active {
+    border-color: @pink;
+  }
+
   @media (min-width: @tablet-width) {
     width: 496px;
     height: 189px;
