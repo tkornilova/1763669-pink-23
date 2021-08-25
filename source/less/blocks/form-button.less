@@ -23,8 +23,8 @@
   @media (min-width: @desktop-width) {
     width: 1200px;
     padding-bottom: 2px;
-    padding-left: 132px;
-    padding-right: 129px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -42,6 +42,20 @@
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
+
+  &:hover,
+  &:focus {
+    background-color: @green-darker;
+  }
+
+  &:active {
+    color: @basic-white-opacity30;
+  }
+
+  &:disabled {
+    background-color: @gray-table-border;
+    color: @basic-white;
+  }
 
   @media (min-width: @tablet-width) {
     margin-bottom: 0;

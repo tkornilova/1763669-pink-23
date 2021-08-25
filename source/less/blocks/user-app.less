@@ -1,32 +1,53 @@
 .user-app {
-  width: 320px;
   margin: 0 auto;
   background-color: @gray-light;
+  order: 4;
+
+  @media (min-width: @tablet-width) {
+    background-color: transparent;
+    order: 2;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
+}
+
+.user-app__wrapper {
+  width: 320px;
+  margin: 0 auto;
   padding-top: 42px;
   padding-bottom: 42px;
   padding-left: 22px;
   padding-right: 22px;
   box-sizing: border-box;
-  order: 5;
 
   @media (min-width: @tablet-width) {
     width: 660px;
-    background-color: transparent;
     padding-bottom: 65px;
     padding-left: 22px;
     padding-right: 22px;
-    box-sizing: border-box;
-    order: 3;
   }
 
   @media (min-width: @desktop-width) {
     width: 431px;
     background-color: transparent;
-    padding-bottom: 69px;
+    padding-top: 0;
+    padding-bottom: 64px;
     padding-left: 0;
     padding-right: 0;
     box-sizing: border-box;
     order: 3;
+  }
+}
+
+.user-app__fieldset-wrapper {
+  @media (min-width: @desktop-width) {
+    width: 200px;
+    padding-top: 66px;
+    padding-bottom: 66px;
+    padding-left: 133px;
+    padding-right: 98px;
   }
 }
 
@@ -42,8 +63,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 66px 133px;
+    padding: 0;
     width: 431px;
+    border: 2px solid @gray-table-border;
   }
 }
 
@@ -76,7 +98,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    max-width: 200px;
+    min-width: 318px;
+    padding-bottom: 31px;
   }
 }
 
@@ -87,4 +110,64 @@
 .user-app__fieldset-item label {
   font-size: 18px;
   line-height: 30px;
+  padding-left: 40px;
+  position: relative;
+  cursor: pointer;
+}
+
+
+.user-app__fieldset-item label::before {
+  content: url("../../img/button-radio-empty.svg");
+  width: 37px;
+  height: 37px;
+  position: absolute;
+  left: -16px;
+  top: -8px;
+}
+
+.user-app__fieldset-item label:hover::before,
+.user-app__fieldset-item label:focus::before {
+  content: url("../../img/button-radio-empty-hover.svg");
+  width: 37px;
+  height: 37px;
+  position: absolute;
+  left: -16px;
+  top: -8px;
+}
+
+.user-app__fieldset-item label:active::before {
+  content: url("../../img/button-radio-empty-active.svg");
+  width: 37px;
+  height: 37px;
+  position: absolute;
+  left: -16px;
+  top: -8px;
+}
+
+.user-app__fieldset-input:checked label::before {
+  content: url("../../img/button-radio-check.svg");
+  width: 37px;
+  height: 37px;
+  position: absolute;
+  left: -16px;
+  top: -8px;
+}
+
+.user-app__fieldset-input:checked label:hover::before,
+.user-app__fieldset-input:checked label:focus::before {
+  content: url("../../img/button-radio-check-hover.svg");
+  width: 37px;
+  height: 37px;
+  position: absolute;
+  left: -16px;
+  top: -8px;
+}
+
+.user-app__fieldset-input:checked label:focus::before {
+  content: url("../../img/button-radio-check-active.svg");
+  width: 37px;
+  height: 37px;
+  position: absolute;
+  left: -16px;
+  top: -8px;
 }

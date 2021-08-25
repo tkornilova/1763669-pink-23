@@ -6,7 +6,7 @@
   padding-left: 22px;
   padding-right: 22px;
   box-sizing: border-box;
-  order: 6;
+  order: 5;
 
   @media (min-width: @tablet-width) {
     width: 660px;
@@ -14,13 +14,14 @@
     padding-bottom: 70px;
     padding-left: 22px;
     padding-right: 22px;
-    order: 6;
   }
 
   @media (min-width: @desktop-width) {
     width: 936px;
     padding-bottom: 69px;
-    order: 6;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
   }
 }
 
@@ -45,6 +46,7 @@
     padding-bottom: 45px;
     padding-left: 60px;
     padding-right: 60px;
+    border: 2px solid @gray-table-border;
   }
 }
 
@@ -68,6 +70,15 @@
   border-radius: 1px;
   box-sizing: border-box;
   font-family: inherit;
+
+  &:hover,
+  &:focus {
+    border-color: @main-gray;
+  }
+
+  &:active {
+    border-color: @pink;
+  }
 
   @media (min-width: @tablet-width) {
     width: 496px;
