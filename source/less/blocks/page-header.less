@@ -41,7 +41,10 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 150px;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    display: block;
   }
 }
 
@@ -67,9 +70,35 @@
 .page-header__wrapper--opened {
   background-color: @main-gray;
   height: 69px;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
     height: 110px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 43px 130px;
+    box-sizing: border-box;
+  }
+}
+
+.page-header__wrapper--closed {
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 43px 130px;
+    margin: 0 auto;
+    box-sizing: border-box;
   }
 }
 
@@ -97,13 +126,14 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 1200px;
-    padding: 43px 130px;
+    width: 620px;
     background-color: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    position: initial;
+
   }
 }
 
@@ -121,6 +151,7 @@
 }
 
 .page-header__nav-item {
+
   &:hover a,
   &:focus a {
     color: @pink;
@@ -142,6 +173,13 @@
 
 .page-header__nav-item a {
   color: @basic-white;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 300;
+    text-transform: none;
+  }
 }
 
 .page-header__wrapper-logo {
