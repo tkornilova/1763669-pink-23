@@ -49,11 +49,14 @@
   }
 }
 
-.achievement__item {
+
+.achievement__fieldset p {
+  margin: 0;
+  padding-bottom: 69px;
+
   @media (min-width: @desktop-width) {
-    min-width: 254px;
-    padding-bottom: 69px;
-    box-sizing: border-box;
+    width: 212px;
+    padding-left: 57px;
   }
 }
 
@@ -72,11 +75,6 @@
   }
 }
 
-.achievement__fieldset p {
-  margin: 0;
-  padding-bottom: 69px;
-}
-
 .achievement__fieldset p:last-of-type {
   padding-bottom: 0;
 }
@@ -89,65 +87,65 @@
 }
 
 .achievement__item label {
+  width: 200px;
   font-size: 18px;
   line-height: 30px;
-  padding-left: 75px;
   position: relative;
   cursor: pointer;
 }
 
-.achievement__item label::before {
+.achievement__item-label::before {
   content: url("../../img/button-checkbox-empty.svg");
   width: 37px;
   height: 37px;
   position: absolute;
-  left: 22px;
-  top: -8px;
+  left: -53px;
+  top: -6px;
 }
 
-.achievement__item label:hover::before,
-.achievement__item label:focus::before {
+.achievement__item-label:hover::before,
+.achievement__item-label:focus::before {
   content: url("../../img/button-checkbox-empty-hover.svg");
   width: 37px;
   height: 37px;
   position: absolute;
-  left: 22px;
-  top: -8px;
+  left: -53px;
+  top: -6px;
 }
 
-.achievement__item label:active::before {
+.achievement__item-label:active::before {
   content: url("../../img/button-checkbox-empty-active.svg");
   width: 37px;
   height: 37px;
   position: absolute;
-  left: 22px;
-  top: -8px;
+  left: -53px;
+  top: -6px;
 }
 
-.achievement__item-input:checked label::before {
+.achievement__item-input:checked + .achievement__item-label::before {
   content: url("../../img/button-checkbox-check.svg");
   width: 37px;
   height: 37px;
   position: absolute;
-  left: 22px;
-  top: -8px;
+  left: -53px;
+  top: -6px;
 }
 
-.achievement__item-input:checked label:hover::before,
-.achievement__item-input:checked label:focus::before {
+.achievement__item-input:checked + .achievement__item-label:hover::before,
+.achievement__item-input:checked + .achievement__item-label:focus::before {
   content: url("../../img/button-checkbox-check-hover.svg");
   width: 37px;
   height: 37px;
   position: absolute;
-  left: 22px;
-  top: -8px;
+  left: -53px;
+  top: -6px;
 }
 
-.achievement__item-input:checked label:active::before {
+.achievement__item-input:checked + .achievement__item-label:active::before {
   content: url("../../img/button-checkbox-check-active.svg");
   width: 37px;
   height: 37px;
   position: absolute;
-  left: 22px;
-  top: -8px;
+  left: -53px;
+  top: -6px;
 }
