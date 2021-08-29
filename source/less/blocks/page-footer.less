@@ -103,7 +103,20 @@
   margin: 0;
 }
 
-.page-footer__map-img {
+.page-footer__map {
+  height: 200px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    height: 374px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 502px;
+  }
+}
+
+.page-footer__map iframe {
   width: 100%;
-  padding: 0;
+  height: 100%;
 }
