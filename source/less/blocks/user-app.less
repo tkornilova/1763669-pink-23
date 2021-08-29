@@ -116,7 +116,7 @@
 }
 
 
-.user-app__fieldset-item label::before {
+.user-app__fieldset-label::before {
   content: url("../../img/button-radio-empty.svg");
   width: 37px;
   height: 37px;
@@ -125,8 +125,8 @@
   top: -8px;
 }
 
-.user-app__fieldset-item label:hover::before,
-.user-app__fieldset-item label:focus::before {
+.user-app__fieldset-label:hover::before,
+.user-app__fieldset-label:focus::before {
   content: url("../../img/button-radio-empty-hover.svg");
   width: 37px;
   height: 37px;
@@ -135,7 +135,7 @@
   top: -8px;
 }
 
-.user-app__fieldset-item label:active::before {
+.user-app__fieldset-label:active::before {
   content: url("../../img/button-radio-empty-active.svg");
   width: 37px;
   height: 37px;
@@ -144,7 +144,7 @@
   top: -8px;
 }
 
-.user-app__fieldset-input:checked label::before {
+.user-app__fieldset-input:checked + .user-app__fieldset-label::before {
   content: url("../../img/button-radio-check.svg");
   width: 37px;
   height: 37px;
@@ -153,8 +153,8 @@
   top: -8px;
 }
 
-.user-app__fieldset-input:checked label:hover::before,
-.user-app__fieldset-input:checked label:focus::before {
+.user-app__fieldset-input:checked + .user-app__fieldset-label:hover::before,
+.user-app__fieldset-input:checked + .user-app__fieldset-label:focus::before {
   content: url("../../img/button-radio-check-hover.svg");
   width: 37px;
   height: 37px;
@@ -163,7 +163,7 @@
   top: -8px;
 }
 
-.user-app__fieldset-input:checked label:focus::before {
+.user-app__fieldset-input:checked + .user-app__fieldset-label:focus::before {
   content: url("../../img/button-radio-check-active.svg");
   width: 37px;
   height: 37px;
