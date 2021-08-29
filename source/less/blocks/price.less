@@ -100,32 +100,32 @@
 }
 
 .price__column-description-top + .price__column-description-top-hit {
- position: relative;
- border-left: 2px solid @basic-white;
- border-right: 2px solid @basic-white;
+  position: relative;
+  border-left: 2px solid @basic-white;
+  border-right: 2px solid @basic-white;
 
- &::before {
-   content: url("../../img/icon-hit.svg");
-   width: 74px;
-   height: 74px;
-   position: absolute;
-   left: 0;
-   top: 0;
- }
-
- @media (min-width: @tablet-width) {
   &::before {
-    width: 61px;
-    height: 61px;
-  }
- }
-
- @media (min-width: @desktop-width) {
-  &::before {
+    content: url("../../img/icon-hit.svg");
     width: 74px;
     height: 74px;
+    position: absolute;
+    left: 0;
+    top: 0;
   }
- }
+
+  @media (min-width: @tablet-width) {
+    &::before {
+      width: 61px;
+      height: 61px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      width: 74px;
+      height: 74px;
+    }
+  }
 }
 
 .price__column-white,

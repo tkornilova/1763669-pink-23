@@ -31,16 +31,28 @@
 .site-description-main .site-description__slogan-wrapper {
   width: 100%;
   min-height: 462px;
-  background-image: url("../../img/header-bg-phone.png"), url("../../img/header-bg.png");
+  background-image: url("../../img/header-bg.png");
   background-repeat: no-repeat;
-  background-position: -22px 217px, center;
-  background-size: 320px 286px, cover;
+  background-position: center;
+  background-size: cover;
   background-color: @main-gray;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     background-image: none;
     background-color: transparent;
+  }
+}
+
+.site-description__slogan-wrapper-bg {
+  @media (max-width: @mobile-width-only) {
+  width: 320px;
+  background-image: url("../../img/header-bg-phone.png");
+  background-repeat: no-repeat;
+  background-position: -97px 216px;
+  background-size: auto 297px;
+  background-color: transparent;
+  margin: 0 auto;
   }
 }
 
