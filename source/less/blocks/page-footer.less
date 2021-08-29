@@ -104,6 +104,21 @@
   margin: 0;
 }
 
+.page-footer__contacts-adress-phone,
+.page-footer__contacts-adress-email {
+
+  &:hover,
+  &:focus {
+    color: @main-gray;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: @main-gray-opacity30;
+    text-decoration: none;
+  }
+}
+
 .page-footer__map {
   height: 200px;
   margin: 0 auto;
@@ -137,7 +152,7 @@
 
     &::before {
       width: 1200px;
-      top: -18px;
+      top: -20px;
     }
   }
 }

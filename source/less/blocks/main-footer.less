@@ -86,6 +86,22 @@
   margin: 0;
 }
 
+.main-footer__copyright-link path {
+  fill: @pink;
+}
+
+.main-footer__copyright-link {
+
+  &:hover path,
+  &:focus path {
+    fill: @main-gray;
+  }
+
+  &:active path {
+    fill: @main-gray-opacity30 ;
+  }
+}
+
 .main-footer__copyright p {
   margin: 0;
 }

@@ -180,6 +180,22 @@
   }
 }
 
+.page-header__nav-link--current {
+  position: relative;
+}
+
+.page-header__nav-link.page-header__nav-link--current::after {
+  content: "";
+  width: auto;
+  height: 2px;
+  background-color: #FFFFFF;
+  position: absolute;
+  bottom: -16px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
 .page-header__wrapper-logo {
   &:hover path,
   &:focus path {
