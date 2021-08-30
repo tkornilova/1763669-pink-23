@@ -1,13 +1,17 @@
-.site-description__main {
+.site-description-main {
   @media (min-width: @tablet-width) {
     width: 100%;
     min-height: 729px;
-    background-image: url("../../img/header-bg-phone.png"), url("../../img/header-bg.png");
+    background-image: url("../../img/header-bg-phone.png"), url("../../img/header-bg.jpg");
     background-repeat: no-repeat;
     background-position: 50% bottom, center;
-    background-size: 660px 545px, cover;
+    background-size: 911px auto, cover;
     background-color: @main-gray;
     margin: 0 auto;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/header-bg-phone@2x.png"), url("../../img/header-bg@2x.jpg");
   }
 
   @media (min-width: @desktop-width) {
@@ -16,7 +20,7 @@
   }
 }
 
-.site-description__main-wrapper {
+.site-description-main__wrapper {
   @media (min-width: @tablet-width) {
     width: 660px;
     margin: 0 auto;
@@ -28,15 +32,19 @@
   }
 }
 
-.site-description__main .site-description__slogan-wrapper {
+.site-description-main .site-description__slogan-wrapper {
   width: 100%;
   min-height: 462px;
-  background-image: url("../../img/header-bg-phone.png"), url("../../img/header-bg.png");
+  background-image: url("../../img/header-bg.jpg");
   background-repeat: no-repeat;
-  background-position: -22px 217px, center;
-  background-size: 320px 286px, cover;
+  background-position: center;
+  background-size: cover;
   background-color: @main-gray;
   margin: 0 auto;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/header-bg@2x.jpg");
+  }
 
   @media (min-width: @tablet-width) {
     background-image: none;
@@ -44,7 +52,23 @@
   }
 }
 
-.site-description__main .site-description__slogan {
+.site-description__slogan-wrapper-bg {
+  @media (max-width: @mobile-width-only) {
+    width: 320px;
+    background-image: url("../../img/header-bg-phone.png");
+    background-repeat: no-repeat;
+    background-position: -148px 216px;
+    background-size: auto 297px;
+    background-color: transparent;
+    margin: 0 auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/header-bg-phone@2x.png");
+    }
+  }
+}
+
+.site-description-main .site-description__slogan {
   width: 320px;
   font-size: 24px;
   line-height: 33px;
@@ -79,7 +103,7 @@
   }
 }
 
-.site-description__main .site-description__upload-wrapper {
+.site-description-main .site-description__upload-wrapper {
   background-color: @main-gray;
   text-align: center;
   padding-top: 28px;
@@ -177,15 +201,19 @@
 
 //Catalog, Form
 
-.site-description__inner {
+.site-description-inner {
   width: 100%;
   min-height: 237px;
-  background-image: url("../../img/header-bg.png");
+  background-image: url("../../img/header-bg.jpg");
   background-repeat: no-repeat;
   background-position: 50% top;
   background-size: cover;
   background-color: @main-gray;
   margin: 0 auto;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/header-bg@2x.jpg");
+  }
 
   @media (min-width: @tablet-width) {
     min-height: 440px;
@@ -196,7 +224,7 @@
   }
 }
 
-.site-description__inner-wrapper {
+.site-description-inner__wrapper {
   width: 320px;
   margin: 0 auto;
 
@@ -209,7 +237,7 @@
   }
 }
 
-.site-description__inner-slogan {
+.site-description-inner__slogan {
   font-size: 24px;
   line-height: 33px;
   font-weight: 300;

@@ -41,7 +41,7 @@
   position: absolute;
   right: -164px;
   width: 840px;
-  bottom: 55px;
+  bottom: 100px;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
@@ -95,6 +95,35 @@
       width: 233px;
       height: 94px;
       padding: 23px 55px;
+    }
+  }
+}
+
+.price__column-description-top + .price__column-description-top-hit {
+  position: relative;
+  border-left: 2px solid @basic-white;
+  border-right: 2px solid @basic-white;
+
+  &::before {
+    content: url("../../img/icon-hit.svg");
+    width: 74px;
+    height: 74px;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    &::before {
+      width: 61px;
+      height: 61px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      width: 74px;
+      height: 74px;
     }
   }
 }
@@ -200,6 +229,56 @@
 }
 
 .price__list {
-  margin: 0;
+  min-width: 63px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 30px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 49px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.price__item {
+  margin-right: 19px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.price__button {
+  border: none;
+  background-color: @main-gray-opacity30;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
   padding: 0;
+  margin: 0;
+
+  &:hover,
+  &:focus {
+    background-color: @main-gray-opacity60;
+  }
+
+  &:active {
+    background-color: @main-gray-opacity10;
+  }
+}
+
+.price__button--active {
+  width: 12px;
+  height: 12px;
+  background-color: @basic-white;
+  border-radius: 50%;
+  border: 3px solid @main-gray;
+  padding: 0;
+  margin: 0;
 }

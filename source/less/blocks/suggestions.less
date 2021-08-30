@@ -67,12 +67,20 @@
   background-size: 157px 320px, cover;
   margin: 0 auto;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/suggestions-bg@2x.png"), url("../../img/gray-bg@2x.png");
+  }
+
   @media (min-width: @tablet-width) {
     background-image: url("../../img/gray-bg.png");
     background-color: @basic-white;
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/gray-bg@2x.png");
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -82,6 +90,10 @@
     background-position: 0 50px;
     background-size: cover;
     padding-bottom: 59px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/gray-bg@2x.png");
+    }
   }
 }
 
@@ -126,6 +138,11 @@
     background-position: -5px 20px, 282px 20px, 578px 20px;
     background-size: auto, auto, auto;
     background-color: transparent;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/suggestions-bg-phone-shadow-1@2x.png"), url("../../img/suggestions-bg-phone-shadow-2@2x.png"), url("../../img/suggestions-bg-phone-shadow-3@2x.png");
+      background-size: 300px auto, 300px auto, 300px auto;
+    }
 
     &::before {
       content: none;
