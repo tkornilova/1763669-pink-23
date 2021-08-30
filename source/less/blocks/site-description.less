@@ -2,12 +2,16 @@
   @media (min-width: @tablet-width) {
     width: 100%;
     min-height: 729px;
-    background-image: url("../../img/header-bg-phone.png"), url("../../img/header-bg.png");
+    background-image: url("../../img/header-bg-phone.png"), url("../../img/header-bg.jpg");
     background-repeat: no-repeat;
     background-position: 50% bottom, center;
-    background-size: 660px 545px, cover;
+    background-size: 911px auto, cover;
     background-color: @main-gray;
     margin: 0 auto;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/header-bg-phone@2x.png"), url("../../img/header-bg@2x.jpg");
   }
 
   @media (min-width: @desktop-width) {
@@ -31,12 +35,16 @@
 .site-description-main .site-description__slogan-wrapper {
   width: 100%;
   min-height: 462px;
-  background-image: url("../../img/header-bg.png");
+  background-image: url("../../img/header-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: @main-gray;
   margin: 0 auto;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/header-bg@2x.jpg");
+  }
 
   @media (min-width: @tablet-width) {
     background-image: none;
@@ -49,10 +57,14 @@
     width: 320px;
     background-image: url("../../img/header-bg-phone.png");
     background-repeat: no-repeat;
-    background-position: -97px 216px;
+    background-position: -148px 216px;
     background-size: auto 297px;
     background-color: transparent;
     margin: 0 auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/header-bg-phone@2x.png");
+    }
   }
 }
 
@@ -192,12 +204,16 @@
 .site-description-inner {
   width: 100%;
   min-height: 237px;
-  background-image: url("../../img/header-bg.png");
+  background-image: url("../../img/header-bg.jpg");
   background-repeat: no-repeat;
   background-position: 50% top;
   background-size: cover;
   background-color: @main-gray;
   margin: 0 auto;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/header-bg@2x.jpg");
+  }
 
   @media (min-width: @tablet-width) {
     min-height: 440px;
