@@ -1,23 +1,22 @@
 .panorama {
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
   padding-top: 54px;
   padding-bottom: 20px;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    width: 660px;
     padding-top: 100px;
     padding-bottom: 50px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1200px;
     padding-bottom: 50px;
   }
 }
 
 .panorama__slogan {
+  width: 280px;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
@@ -27,6 +26,7 @@
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
+    width: 600px;
     font-size: 18px;
     padding-bottom: 85px;
     padding-left: 45px;
@@ -42,32 +42,50 @@
 
 .panorama__section-photo {
   position: relative;
-  width: 320px;
   height: 135px;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    width: 660px;
     height: 509px;
-    overflow: hidden;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1200px;
     height: 506px;
   }
 }
 
 .panorama__img {
-  width: 320px;
+  width: 100%;
+  height: 137px;
+  object-fit: cover;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    width: unset;
-    object-position: -260px;
+    height: 509px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 506px;
+  }
+}
+
+.panorama__button-wrapper {
+  width: 320px;
+  position: absolute;
+  z-index: 5;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  display: inline-block;
+  vertical-align: baseline;
+  text-align: right;
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
   }
 
   @media (min-width: @desktop-width) {
     width: 1200px;
-    object-position: center;
   }
 }
 
@@ -81,17 +99,16 @@
   border: none;
   padding: 6px 21px;
   box-sizing: border-box;
-  position: absolute;
-  right: 20px;
+  margin-right: 20px;
 
   @media (min-width: @tablet-width) {
-    top: 57px;
-    right: 20px;
+    margin-top: 57px;
+    margin-right: 20px;
   }
 
   @media (min-width: @desktop-width) {
-    top: 54px;
-    right: 130px;
+    margin-top: 54px;
+    margin-right: 130px;
   }
 }
 

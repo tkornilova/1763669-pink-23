@@ -169,6 +169,12 @@
   }
 }
 
+.page-header__nav-link--current::after {
+  @media (max-width: @tablet-width-only) {
+    display: none;
+  }
+}
+
 .page-header__nav-item a {
   color: @basic-white;
 
@@ -197,32 +203,30 @@
 }
 
 .page-header__wrapper-logo {
-  &:hover path,
-  &:focus path {
+  &:hover,
+  &:focus {
     fill: @pink;
   }
 
-  &:active path {
+  &:active {
     opacity: 0.3;
   }
 }
 
-.page-header__logo-pink-mobile path {
-  fill: @basic-white;
-}
-
 .page-header__logo-pink-mobile {
+  fill: @basic-white;
+
   @media (max-width: @mobile-width-only) {
     display: block;
     width: 74px;
     height: 23px;
 
-    &:hover path,
-    &:focus path {
+    &:hover,
+    &:focus {
       fill: @pink;
     }
 
-    &:active path {
+    &:active {
       fill: @basic-white-opacity30;
     }
   }
@@ -240,12 +244,12 @@
     width: 145px;
     height: 40px;
 
-    &:hover path,
-    &:focus path {
+    &:hover,
+    &:focus {
       fill: @pink;
     }
 
-    &:active path {
+    &:active {
       fill: @basic-white-opacity30;
     }
   }
@@ -259,12 +263,12 @@
     width: 147px;
     height: 40px;
 
-    &:hover path,
-    &:focus path {
+    &:hover,
+    &:focus {
       fill: @pink;
     }
 
-    &:active path {
+    &:active {
       fill: @basic-white-opacity30;
     }
   }
@@ -281,12 +285,12 @@
   background-color: transparent;
   cursor: pointer;
 
-  &:hover path,
-  &:focus path {
+  &:hover,
+  &:focus {
     fill: @pink;
   }
 
-  &:active path {
+  &:active {
     opacity: 0.3;
   }
 
