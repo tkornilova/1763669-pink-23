@@ -169,6 +169,12 @@
   }
 }
 
+.page-header__nav-link--current::after {
+  @media (max-width: @tablet-width-only) {
+    display: none;
+  }
+}
+
 .page-header__nav-item a {
   color: @basic-white;
 
