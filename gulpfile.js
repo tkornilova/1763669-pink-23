@@ -8,6 +8,11 @@ const sync = require("browser-sync").create();
 const htmlmin = require("gulp-htmlmin");
 const csso = require("postcss-csso");
 const rename = require("gulp-rename");
+const terser = require("gulp-terser");
+const squoosh = require("gulp-libsquoosh");
+const webp = require("gulp-webp");
+const svgstore = require("gulp-svgstore");
+const del = require("del");
 
 // Styles
 
@@ -37,6 +42,17 @@ const html = () => {
 }
 
 exports.html = html;
+
+// Scripts
+
+const script = () => {
+  return gulp.src("source/js/script.js")
+    .pipe(terser())
+    .pipe(rename("script.min.js"))
+    .pipe(gulp.dest("build/js"));
+}
+
+exports.script = script;
 
 // Server
 
