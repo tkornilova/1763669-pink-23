@@ -54,6 +54,23 @@ const script = () => {
 
 exports.script = script;
 
+// Images
+
+const optimizeImages = () => {
+  return gulp.src("source/img/**/*.{jpg,png,svg}")
+    .pipe(squoosh())
+    .pipe(gulp.dest("build/img"));
+}
+
+exports.optimizeImages = optimizeImages;
+
+const copyImages = () => {
+  return gulp.src("source/img/**/*.{jpg,png,svg}")
+    .pipe(gulp.dest("build/img"));
+}
+
+exports.copyImages = copyImages;
+
 // Server
 
 const server = (done) => {
