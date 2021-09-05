@@ -115,11 +115,21 @@
           <legend>Контактная информация</legend>
           <div class="user-contacts__item">
             <label for="phone">Номер телефона</label>
-            <input type="text" id="phone" placeholder="Номер, пожалуйста">
+            <div class="user-contacts__item-wrapper">
+              <input class="user-contacts__item-input" type="text" id="phone" placeholder="Номер, пожалуйста">
+              <span>
+                <img class="user-contacts__item-icon" src="img/icon-phone.svg" alt="Иконка телефона" width="20" height="19">
+              </span>
+            </div>
           </div>
           <div class="user-contacts__item">
             <label for="email">Адрес почты</label>
-            <input type="text" id="email" placeholder="Введите почту *">
+            <div class="user-contacts__item-wrapper">
+              <input class="user-contacts__item-input" type="text" id="email" placeholder="Введите почту *">
+              <span>
+                <img class="user-contacts__item-icon" src="img/icon-email.svg" alt="Иконка телефона" width="18" height="13">
+              </span>
+            </div>
           </div>
         </fieldset>
       </div>
