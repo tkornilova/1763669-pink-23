@@ -45,14 +45,14 @@ exports.html = html;
 
 // Scripts
 
-const script = () => {
+const scripts = () => {
   return gulp.src("source/js/script.js")
     .pipe(terser())
     .pipe(rename("script.min.js"))
     .pipe(gulp.dest("build/js"));
 }
 
-exports.script = script;
+exports.scripts = scripts;
 
 // Images
 
@@ -110,6 +110,14 @@ const copy = (done) => {
 }
 
 exports.copy = copy;
+
+// Clean
+
+const clean = () => {
+  return del("build");
+};
+
+exports.clean = clean;
 
 // Server
 
