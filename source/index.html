@@ -6,7 +6,7 @@
     <title>HTML Academy: Пинк</title>
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="body">
 
@@ -132,7 +132,21 @@
           <b class="reviews__user-name">Николай Петров</b>
           <p class="reviews__user-job">25 лет, водитель трамвая</p>
         </div>
-        <blockquote class="reviews__comment">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
+        <div class="reviws__wrapper-comment">
+          <button class="reviews__comment-button reviews__comment-button-back" type="submit">
+            <span class="visually-hidden">Предыдущий комментарий</span>
+            <svg class="previews__comment-button-icon" width="22" height="41">
+              <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+            </svg>
+          </button>
+          <blockquote class="reviews__comment">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
+          <button class="reviews__comment-button reviews__comment-button-next" type="submit">
+            <span class="visually-hidden">Следующий комментарий</span>
+            <svg class="previews__comment-button-icon" width="22" height="41">
+              <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+            </svg>
+          </button>
+        </div>
         <ul class="reviews__list">
           <li class="reviews__item">
             <button class="reviews__button--active"></button>
@@ -228,13 +242,13 @@
     <div class="main-footer__logo">
       <a class="main-footer__logo-link" href="#">
         <svg class="main-footer__logo-link-glasses" width="59" height="40">
-          <use xlink:href="img/sprite.svg#logo-link-glasses"></use>
+          <use xlink:href="img/sprite.svg#logo-glasses"></use>
         </svg>
         <svg class="main-footer__logo-link-pink" width="74" height="23">
-          <use xlink:href="img/sprite.svg#logo-link-pink"></use>
+          <use xlink:href="img/sprite.svg#logo-pink-mobile"></use>
         </svg>
         <svg class="main-footer__logo-link-desktop" width="147" height="40">
-          <use xlink:href="img/sprite.svg#logo-link-desktop"></use>
+          <use xlink:href="img/sprite.svg#llogo-pink-desktop"></use>
         </svg>
       </a>
     </div>
@@ -270,20 +284,7 @@
     </div>
   </footer>
 
-  <script>
-    var navMain = document.querySelector('.page-header__wrapper');
-    var btnOpenClose = document.querySelector('.page-header__nav-button');
-
-    btnOpenClose.addEventListener('click', function() {
-      if (navMain.classList.contains('page-header__wrapper--closed')) {
-        navMain.classList.remove('page-header__wrapper--closed');
-        navMain.classList.add('page-header__wrapper--opened');
-      } else {
-        navMain.classList.remove('page-header__wrapper--opened');
-        navMain.classList.add('page-header__wrapper--closed');
-      }
-    });
-  </script>
+  <script src="js/script.min.js"></script>
 
   </body>
 
