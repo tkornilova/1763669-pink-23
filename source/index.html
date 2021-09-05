@@ -132,7 +132,21 @@
           <b class="reviews__user-name">Николай Петров</b>
           <p class="reviews__user-job">25 лет, водитель трамвая</p>
         </div>
-        <blockquote class="reviews__comment">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
+        <div class="reviws__wrapper-comment">
+          <button class="reviews__comment-button reviews__comment-button-back" type="submit">
+            <span class="visually-hidden">Предыдущий комментарий</span>
+            <svg class="previews__comment-button-icon" width="22" height="41">
+              <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+            </svg>
+          </button>
+          <blockquote class="reviews__comment">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
+          <button class="reviews__comment-button reviews__comment-button-next" type="submit">
+            <span class="visually-hidden">Следующий комментарий</span>
+            <svg class="previews__comment-button-icon" width="22" height="41">
+              <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+            </svg>
+          </button>
+        </div>
         <ul class="reviews__list">
           <li class="reviews__item">
             <button class="reviews__button--active"></button>

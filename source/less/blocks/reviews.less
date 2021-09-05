@@ -83,6 +83,42 @@
   }
 }
 
+.reviws__wrapper-comment {
+  @media (min-width: @desktop-width) {
+    width: 940px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 51px;
+  }
+}
+
+.reviews__comment-button {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    border: none;
+    width: 22px;
+    height: 41px;
+    cursor: pointer;
+    padding: 0;
+  }
+}
+
+.reviews__comment-button-back {
+  @media (min-width: @desktop-width) {
+    order: 1;
+  }
+}
+
+.reviews__comment-button-next {
+  @media (min-width: @desktop-width) {
+    order: 3;
+  }
+}
+
 .reviews__comment {
   font-size: 14px;
   line-height: 30px;
@@ -100,42 +136,10 @@
   }
 
   @media (min-width: @desktop-width) {
+    width: 690px;
     position: relative;
-    margin-bottom: 51px;
-    padding: 0 104px;
-
-    &::before {
-      content: url("../../img/icon-arrow-left.svg");
-      width: 22px;
-      height: 41px;
-      position: absolute;
-      opacity: 0.3;
-      top: 0;
-      bottom: 0;
-      margin: auto 0;
-      left: 0;
-
-      &:hover,
-      &:focus {
-        opacity: 1;
-      }
-
-      &:active {
-        opacity: 0.1;
-      }
-    }
-
-    &::after {
-      content: url("../../img/icon-arrow-right.svg");
-      width: 22px;
-      height: 41px;
-      position: absolute;
-      opacity: 0.3;
-      top: 0;
-      bottom: 0;
-      margin: auto 0;
-      right: 0;
-    }
+    padding: 0;
+    order: 2;
   }
 }
 
