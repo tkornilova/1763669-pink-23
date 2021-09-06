@@ -104,6 +104,17 @@
     height: 41px;
     cursor: pointer;
     padding: 0;
+    background-color: transparent;
+    opacity: 0.5;
+
+    &:hover svg,
+    &:focus svg {
+      opacity: initial;
+    }
+
+    &:focus svg {
+      opacity: 0.2;
+    }
   }
 }
 
