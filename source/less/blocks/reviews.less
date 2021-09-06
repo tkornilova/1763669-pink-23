@@ -3,8 +3,15 @@
 }
 
 .reviews__user {
+  padding-bottom: 13px;
+  margin: 0 auto;
+
   @media (min-width: @tablet-width) {
     order: 2;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
   }
 }
 
@@ -14,28 +21,28 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-top: 50px;
+  padding-top: 44px;
   padding-left: 12px;
   padding-right: 12px;
-  padding-bottom: 60px;
+  padding-bottom: 32px;
   margin: 0 auto;
   box-sizing: border-box;
   position: relative;
 
   @media (min-width: @tablet-width) {
     width: 660px;
-    padding-top: 54px;
+    padding-top: 47px;
     padding-left: 10px;
     padding-right: 10px;
-    padding-bottom: 17px;
+    padding-bottom: 10px;
   }
 
   @media (min-width: @desktop-width) {
     width: 1200px;
-    padding-top: 193px;
+    padding-top: 186px;
     padding-left: 130px;
     padding-right: 130px;
-    padding-bottom: 41px;
+    padding-bottom: 33px;
 
     &::before {
       content: url("../../img/icon-quotes.svg");
@@ -76,10 +83,12 @@
 
   @media (min-width: @tablet-width) {
     display: block;
+    padding-bottom: 9px;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 18px;
+    padding: 0;
   }
 }
 
@@ -90,7 +99,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 51px;
+    margin-bottom: 36px;
   }
 }
 
@@ -104,6 +113,17 @@
     height: 41px;
     cursor: pointer;
     padding: 0;
+    background-color: transparent;
+    opacity: 0.5;
+
+    &:hover svg,
+    &:focus svg {
+      opacity: initial;
+    }
+
+    &:focus svg {
+      opacity: 0.2;
+    }
   }
 }
 
@@ -125,14 +145,14 @@
   color: @main-gray;
   padding-left: 9px;
   padding-right: 9px;
-  padding-bottom: 44px;
+  padding-bottom: 18px;
   margin: 0 auto;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     order: 1;
     font-size: 18px;
-    padding-bottom: 51px;
+    padding-bottom: 36px;
   }
 
   @media (min-width: @desktop-width) {
@@ -154,6 +174,9 @@
 
   @media (min-width: @tablet-width) {
     order: 3;
+  }
+
+  @media (min-width: @desktop-width) {
     display: none;
   }
 }

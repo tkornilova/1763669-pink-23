@@ -12,8 +12,8 @@
   font-weight: 300;
   color: @main-gray;
   text-align: center;
-  padding-top: 46px;
-  padding-bottom: 40px;
+  padding-top: 39px;
+  padding-bottom: 32px;
   padding-left: 20px;
   padding-right: 20px;
   box-sizing: border-box;
@@ -24,8 +24,8 @@
     width: 660px;
     font-size: 40px;
     line-height: 54px;
-    padding-top: 58px;
-    padding-bottom: 40px;
+    padding-top: 48px;
+    padding-bottom: 32px;
     padding-left: 36px;
     padding-right: 36px;
   }
@@ -34,15 +34,15 @@
     width: 1200px;
     font-size: 50px;
     line-height: 68px;
-    padding-top: 77px;
-    padding-bottom: 72px;
+    padding-top: 62px;
+    padding-bottom: 49px;
     padding-left: 210px;
     padding-right: 210px;
   }
 }
 
 .suggestions__slogan p {
-  padding-bottom: 42px;
+  padding-bottom: 28px;
   margin: 0;
 
   @media (min-width: @tablet-width) {
@@ -63,8 +63,8 @@
   background-image: url("../../img/suggestions-bg.png"), url("../../img/gray-bg.png");
   background-color: @basic-white;
   background-repeat: no-repeat;
-  background-position: 50% 505px, center;
-  background-size: 157px 320px, cover;
+  background-position: 50% 507px, 0 -64px;
+  background-size: 157px 320px, 777px auto;
   margin: 0 auto;
 
   @media (min-resolution: 2dppx) {
@@ -72,10 +72,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    background-image: url("../../img/gray-bg.png");
-    background-color: @basic-white;
-    background-repeat: no-repeat;
-    background-position: 50% 0;
+    background-position: 0 -23px;
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
@@ -87,9 +84,9 @@
     background-image: url("../../img/gray-bg.png");
     background-color: @basic-white;
     background-repeat: no-repeat;
-    background-position: 0 50px;
+    background-position: 0 -37px;
     background-size: cover;
-    padding-bottom: 59px;
+    padding-bottom: 0;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/gray-bg@2x.png");
@@ -99,8 +96,8 @@
 
 .suggestions__list {
   width: 320px;
-  padding-top: 53px;
-  padding-bottom: 325px;
+  padding-top: 79px;
+  padding-bottom: 315px;
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
@@ -111,7 +108,8 @@
   @media (min-width: @tablet-width) {
     width: 660px;
     padding-left: 330px;
-    padding-bottom: 49px;
+    padding-bottom: 39px;
+    padding-top: 73px;
     text-align: left;
 
     &::before {
@@ -120,7 +118,7 @@
       height: 547px;
       position: absolute;
       left: 20px;
-      bottom: -65px;
+      bottom: -67px;
     }
   }
 
@@ -129,23 +127,47 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 360px;
+    padding-top: 367px;
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 0;
     text-align: center;
     background-image: url("../../img/suggestions-bg-phone-shadow-1.png"), url("../../img/suggestions-bg-phone-shadow-2.png"), url("../../img/suggestions-bg-phone-shadow-3.png");
     background-repeat: no-repeat;
-    background-position: -5px 20px, 282px 20px, 578px 20px;
-    background-size: auto, auto, auto;
+    background-position: -32px 8px, 287px 8px, 606px 8px;
+    background-size: 308px auto, 308px auto, 308px auto;
     background-color: transparent;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/suggestions-bg-phone-shadow-1@2x.png"), url("../../img/suggestions-bg-phone-shadow-2@2x.png"), url("../../img/suggestions-bg-phone-shadow-3@2x.png");
-      background-size: 300px auto, 300px auto, 300px auto;
+      background-size: 308px auto, 308px auto, 308px auto;
     }
 
     &::before {
       content: none;
+    }
+  }
+}
+
+.suggestions__item {
+  padding-bottom: 35px;
+  margin: 0 auto;
+
+  &:last-child {
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 252px;
+    padding-right: 45px;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &:last-child {
+      padding: 0;
     }
   }
 }
@@ -155,13 +177,14 @@
   line-height: 24px;
   font-weight: 700;
   color: @basic-black;
+  margin: 0 auto;
+  padding-bottom: 12px;
 
   @media (min-width: @desktop-width) {
     font-size: 30px;
     line-height: 30px;
-    width: 282px;
     margin: 0 auto;
-    padding-bottom: 35px;
+    padding-bottom: 21px;
   }
 }
 
@@ -169,15 +192,20 @@
   font-size: 14px;
   line-height: 24px;
   color: @main-gray;
+  margin: 0 auto;
 
   @media (min-width: @desktop-width) {
     font-size: 18px;
     line-height: 30px;
     width: 240px;
     margin: 0 auto;
+  }
+}
 
-    br {
-      display: none;
-    }
+.suggestions__description br {
+  display: none;
+
+  @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
+    display: initial;
   }
 }

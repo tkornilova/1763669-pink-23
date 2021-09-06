@@ -24,7 +24,7 @@
 
   @media (min-width: @desktop-width) {
     width: 1200px;
-    padding-top: 17px;
+    padding-top: 31px;
     padding-bottom: 67px;
     padding-left: 131px;
     padding-right: 166px;
@@ -44,14 +44,34 @@
   }
 }
 
+.article__text-wrapper {
+  @media (min-width: @tablet-width) {
+    padding-top: 43px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 96px;
+  }
+}
+
 .article__text-title {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   color: @basic-black;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 10px;
+  }
 
   @media (min-width: @desktop-width) {
     line-height: 30px;
+    padding-bottom: 25px;
+
+    & br {
+      display: none;
+    }
   }
 }
 
@@ -60,9 +80,16 @@
   line-height: 24px;
   color: @main-gray;
 
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding-bottom: 5px;
+  }
+
   @media (min-width: @desktop-width) {
     font-size: 18px;
     line-height: 30px;
+    padding-bottom: 30px;
+    margin: 0;
   }
 }
 

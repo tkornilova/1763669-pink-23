@@ -12,7 +12,7 @@
 
   @media (min-width: @tablet-width) {
     width: 660px;
-    padding-top: 36px;
+    padding-top: 34px;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 40px;
@@ -32,7 +32,7 @@
 }
 
 .main-footer div {
-  margin-bottom: 41px;
+  margin-bottom: 31px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
@@ -45,18 +45,24 @@
 
 
 .main-footer__socials-list {
-  width: 200px;
+  width: 182px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 0;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-left: -22px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 .main-footer__socials-item a {
   width: 48px;
   height: 48px;
-  border: 4px solid @main-gray-opacity10;
+  border: 3px solid @main-gray-opacity10;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -122,6 +128,8 @@
 }
 
 .main-footer__copyright a {
+  font-size: 14px;
+  line-height: 18px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

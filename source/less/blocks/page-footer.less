@@ -2,16 +2,18 @@
   width: 320px;
   margin: 0 auto;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 15px;
   box-sizing: border-box;
   overflow: hidden;
 
   @media (min-width: @tablet-width) {
     width: 660px;
+    padding-top: 41px;
   }
 
   @media (min-width: @desktop-width) {
     width: 1200px;
+    padding-top: 56px;
   }
 }
 
@@ -20,19 +22,19 @@
   line-height: 30px;
   font-weight: 300;
   color: @main-gray;
-  margin: 0;
-  padding-bottom: 45px;
+  margin: 0 auto;
+  padding-bottom: 32px;
 
   @media (min-width: @tablet-width) {
     font-size: 40px;
     line-height: 55px;
-    padding-bottom: 51px;
+    padding-bottom: 31px;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 50px;
     line-height: 68px;
-    padding-bottom: 61px;
+    padding-bottom: 39px;
   }
 }
 
@@ -46,12 +48,12 @@
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     padding-top: 0;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 30px;
+    padding-left: 35px;
+    padding-right: 39px;
+    padding-bottom: 24px;
   }
 
   @media (min-width: @desktop-width) {
@@ -63,16 +65,18 @@
 }
 
 .page-footer__contacts-item {
-  padding-bottom: 31px;
+  padding-bottom: 18px;
 
   @media (min-width: @tablet-width) {
     width: 250px;
-    padding-bottom: 55px;
-  }
-}
+    padding-bottom: 41px;
+    padding-right: 70px;
 
-.page-footer__contacts-item:last-child {
-  padding: 0;
+    &:nth-child(2n),
+    &:last-child {
+      padding: 0;
+    }
+  }
 }
 
 .page-footer__contacts-item:first-child {
@@ -93,7 +97,7 @@
   font-weight: 700;
   color: @main-gray;
   margin: 0;
-  padding-bottom: 7px;
+  padding-bottom: 4px;
 }
 
 .page-footer__contacts-adress {
@@ -119,7 +123,7 @@
 }
 
 .page-footer__map {
-  height: 200px;
+  height: 237px;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
@@ -129,7 +133,7 @@
     width: 320px;
     height: 123px;
     position: absolute;
-    top: -91px;
+    top: -59px;
     display: flex;
     justify-content: center;
     margin: auto;
@@ -142,7 +146,6 @@
 
     &::before {
       width: 660px;
-      top: -53px;
     }
   }
 
