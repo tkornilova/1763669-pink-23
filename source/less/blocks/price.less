@@ -10,6 +10,10 @@
     background-position: 0;
     padding-top: 2px;
   }
+
+  @media (min-width: @desktop-width) {
+    background-position: 0 0;
+  }
 }
 
 .price__wrapper {
@@ -35,7 +39,7 @@
     width: 1200px;
     height: 534px;
     background-size: cover;
-    padding-top: 159px;
+    padding-top: 154px;
     padding-bottom: 98px;
     padding-left: 130px;
     padding-right: 130px;
@@ -99,9 +103,9 @@
     overflow: hidden;
 
     @media (min-width: @desktop-width) {
-      width: 233px;
+      width: 235px;
       height: 94px;
-      padding: 23px 55px;
+      padding: 16px 55px;
     }
   }
 }
@@ -133,6 +137,8 @@
     &::before {
       width: 74px;
       height: 74px;
+      left: 0;
+      top: 0;
     }
   }
 }

@@ -32,10 +32,10 @@
 
   @media (min-width: @desktop-width) {
     width: 1200px;
-    padding-top: 193px;
+    padding-top: 186px;
     padding-left: 130px;
     padding-right: 130px;
-    padding-bottom: 41px;
+    padding-bottom: 33px;
 
     &::before {
       content: url("../../img/icon-quotes.svg");
@@ -53,6 +53,10 @@
 .reviews__user {
   padding-bottom: 13px;
   margin: 0 auto;
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
 }
 
 .reviews__user-name {
@@ -86,6 +90,7 @@
 
   @media (min-width: @desktop-width) {
     font-size: 18px;
+    padding: 0;
   }
 }
 
@@ -96,7 +101,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 51px;
+    margin-bottom: 36px;
   }
 }
 

@@ -24,7 +24,7 @@
 
   @media (min-width: @desktop-width) {
     width: 1200px;
-    padding-top: 17px;
+    padding-top: 31px;
     padding-bottom: 67px;
     padding-left: 131px;
     padding-right: 166px;
@@ -48,6 +48,10 @@
   @media (min-width: @tablet-width) {
     padding-top: 43px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 96px;
+  }
 }
 
 .article__text-title {
@@ -63,6 +67,11 @@
 
   @media (min-width: @desktop-width) {
     line-height: 30px;
+    padding-bottom: 25px;
+
+    & br {
+      display: none;
+    }
   }
 }
 
@@ -79,6 +88,7 @@
   @media (min-width: @desktop-width) {
     font-size: 18px;
     line-height: 30px;
+    padding-bottom: 30px;
     margin: 0;
   }
 }
