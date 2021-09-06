@@ -4,6 +4,7 @@
   background-color: @basic-white;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: -265px -27px;
 }
 
 .price__wrapper {
@@ -39,9 +40,9 @@
 .price__table {
   border-collapse: collapse;
   position: absolute;
-  right: -164px;
-  width: 840px;
-  bottom: 100px;
+  right: -260px;
+  width: 1120px;
+  bottom: 127px;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
@@ -56,8 +57,7 @@
   }
 }
 
-.price__table tr,
-.price__table td {
+.price__table tr {
   width: 280px;
   height: 59px;
   box-sizing: border-box;
@@ -74,13 +74,14 @@
 }
 
 .price__column-description-top {
+  width: 280px;
   background-color: @main-gray;
   color: @basic-white;
   border-collapse: collapse;
   padding-top: 19px;
   padding-left: 30px;
   padding-right: 30px;
-  padding-bottom: 35px;
+  padding-bottom: 19px;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
@@ -109,7 +110,7 @@
     width: 74px;
     height: 74px;
     position: absolute;
-    left: 0;
+    left: -1px;
     top: 0;
   }
 
@@ -172,7 +173,7 @@
 }
 
 .price__column-description p {
-  font-size: 14px;
+  font-size: 18px;
   line-height: 30px;
   font-weight: 300;
   margin: 0;
@@ -200,6 +201,7 @@
   padding-left: 20px;
   padding-right: 17px;
   box-sizing: border-box;
+  text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -239,7 +241,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 49px;
+  bottom: 66px;
 
   @media (min-width: @tablet-width) {
     display: none;

@@ -12,8 +12,8 @@
   font-weight: 300;
   color: @main-gray;
   text-align: center;
-  padding-top: 46px;
-  padding-bottom: 40px;
+  padding-top: 39px;
+  padding-bottom: 32px;
   padding-left: 20px;
   padding-right: 20px;
   box-sizing: border-box;
@@ -42,7 +42,7 @@
 }
 
 .suggestions__slogan p {
-  padding-bottom: 42px;
+  padding-bottom: 28px;
   margin: 0;
 
   @media (min-width: @tablet-width) {
@@ -63,8 +63,8 @@
   background-image: url("../../img/suggestions-bg.png"), url("../../img/gray-bg.png");
   background-color: @basic-white;
   background-repeat: no-repeat;
-  background-position: 50% 505px, center;
-  background-size: 157px 320px, cover;
+  background-position: 50% 507px,0 -64px;
+  background-size: 157px 320px, 777px auto;
   margin: 0 auto;
 
   @media (min-resolution: 2dppx) {
@@ -99,8 +99,8 @@
 
 .suggestions__list {
   width: 320px;
-  padding-top: 53px;
-  padding-bottom: 325px;
+  padding-top: 79px;
+  padding-bottom: 315px;
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
@@ -150,11 +150,22 @@
   }
 }
 
+.suggestions__item {
+  padding-bottom: 31px;
+  margin: 0 auto;
+
+  &:last-child {
+    padding: 0;
+  }
+}
+
 .suggestions__title {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
   color: @basic-black;
+  margin: 0 auto;
+  padding-bottom: 12px;
 
   @media (min-width: @desktop-width) {
     font-size: 30px;
@@ -169,6 +180,7 @@
   font-size: 14px;
   line-height: 24px;
   color: @main-gray;
+  margin: 0 auto;
 
   @media (min-width: @desktop-width) {
     font-size: 18px;
