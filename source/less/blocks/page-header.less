@@ -31,7 +31,7 @@
   padding-top: 20px;
   padding-bottom: 16px;
   padding-left: 20px;
-  padding-right: 14px;
+  padding-right: 20px;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -40,7 +40,10 @@
 
   @media (min-width: @tablet-width) {
     width: 660px;
-    padding: 43px 20px;
+    padding-top: 27px;
+    padding-bottom: 43px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   @media (min-width: @desktop-width) {
@@ -281,6 +284,7 @@
 .page-header__wrapper button {
   border: none;
   background-color: transparent;
+  padding: 0;
 }
 
 .page-header__nav-button {
@@ -300,6 +304,11 @@
   @media (min-width: @desktop-width) {
     display: none;
   }
+}
+
+.page-header__nav-button-open,
+.page-header__nav-button-close  {
+  padding-top: 16px;
 }
 
 .page-header__wrapper--closed .page-header__nav-button-close {
