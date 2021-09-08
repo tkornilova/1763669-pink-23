@@ -5,8 +5,7 @@
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-left: 0;
-  padding-bottom: 49px;
+  padding: 0;
 
   @media (min-width: @tablet-width) {
     width: 620px;
@@ -68,7 +67,7 @@
 }
 
 .user-pic__item-wrapper {
-  padding: 25px 17px;
+  padding: 18px 17px;
 }
 
 .user-pic__item p {
@@ -100,7 +99,11 @@
   font-size: 14px;
   line-height: 24px;
   padding-bottom: 12px;
-  min-height: 47px;
+  min-height: min-content;
+
+  @media (min-width: @tablet-width) {
+    min-height: 47px;
+  }
 }
 
 .user-pic__item-bottom {
