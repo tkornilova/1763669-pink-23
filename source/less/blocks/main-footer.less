@@ -57,6 +57,11 @@
     margin-top: 0;
     margin-bottom: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    min-width: 184px;
+    padding-left: 27px;
+  }
 }
 
 .main-footer__socials-item a {
@@ -96,8 +101,8 @@
 }
 
 .main-footer__logo-link {
-  &:hover,
-  &:focus {
+  &:hover svg,
+  &:focus svg {
     fill: @pink;
   }
 
@@ -135,17 +140,24 @@
   justify-content: space-between;
   align-items: center;
   margin: 0;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    width: 153px;
+  }
 }
 
 .main-footer__copyright-link {
-  fill: @pink;
+  & svg {
+    fill: @pink;
+  }
 
-  &:hover,
-  &:focus {
+  &:hover svg,
+  &:focus svg {
     fill: @main-gray;
   }
 
-  &:active {
+  &:active svg {
     fill: @main-gray-opacity30;
   }
 }

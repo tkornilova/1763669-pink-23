@@ -57,10 +57,10 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 0;
-    padding-left: 177px;
-    padding-right: 160px;
-    padding-bottom: 6px;
+    width: 892px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 0;
   }
 }
 
@@ -76,6 +76,10 @@
     &:last-child {
       padding: 0;
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
   }
 }
 
@@ -98,6 +102,10 @@
   color: @main-gray;
   margin: 0;
   padding-bottom: 4px;
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 22px;
+  }
 }
 
 .page-footer__contacts-adress {
@@ -150,11 +158,11 @@
   }
 
   @media (min-width: @desktop-width) {
-    height: 502px;
+    height: 520px;
 
     &::before {
       width: 1200px;
-      top: -21px;
+      top: 0;
     }
   }
 }

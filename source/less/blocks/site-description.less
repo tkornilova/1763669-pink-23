@@ -15,9 +15,10 @@
   }
 
   @media (min-width: @desktop-width) {
+    background-image: url("../../img/header-bg.jpg");
     min-height: 853px;
-    background-size: auto 640px, cover;
-    background-position: 151px 211px, bottom;
+    background-size: cover;
+    background-position: bottom;
   }
 }
 
@@ -66,6 +67,14 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/header-bg-phone@2x.png");
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../../img/header-bg-phone.png");
+    background-repeat: no-repeat;
+    min-height: 853px;
+    background-size: auto 643px, cover;
+    background-position: 148px 208px, bottom;
   }
 }
 
@@ -127,7 +136,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    bottom: 41px;
+    bottom: 172px;
     left: 130px;
   }
 }
@@ -167,7 +176,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 67px;
+    margin-bottom: 68px;
     font-size: 21px;
   }
 }
