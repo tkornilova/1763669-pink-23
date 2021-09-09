@@ -209,36 +209,28 @@
 }
 
 .page-header__wrapper-logo {
+  & svg {
+    fill: @basic-white;
+  }
+
   &:hover svg,
   &:focus svg {
     fill: @pink;
   }
 
   &:active svg {
-    opacity: 0.3;
+    fill: @basic-white-opacity30;
   }
 }
 
 .page-header__logo-pink-mobile {
-  fill: @basic-white;
+  display: none;
 
   @media (max-width: @mobile-width-only) {
     display: block;
+    fill: @basic-white;
     width: 74px;
     height: 23px;
-
-    &:hover,
-    &:focus {
-      fill: @pink;
-    }
-
-    &:active {
-      fill: @basic-white-opacity30;
-    }
-  }
-
-  @media (min-width: @tablet-width) {
-    display: none;
   }
 }
 
@@ -249,15 +241,6 @@
     display: block;
     width: 145px;
     height: 40px;
-
-    &:hover,
-    &:focus {
-      fill: @pink;
-    }
-
-    &:active {
-      fill: @basic-white-opacity30;
-    }
   }
 }
 
@@ -265,18 +248,10 @@
   display: none;
 
   @media (min-width: @desktop-width) {
+    fill: @basic-white;
     display: block;
     width: 147px;
     height: 40px;
-
-    &:hover,
-    &:focus {
-      fill: @pink;
-    }
-
-    &:active {
-      fill: @basic-white-opacity30;
-    }
   }
 }
 
@@ -292,12 +267,16 @@
   background-color: transparent;
   cursor: pointer;
 
-  &:hover,
-  &:focus {
+  & svg {
+    fill: @basic-white;
+  }
+
+  &:hover svg,
+  &:focus svg {
     fill: @pink;
   }
 
-  &:active {
+  &:active svg {
     opacity: 0.3;
   }
 
