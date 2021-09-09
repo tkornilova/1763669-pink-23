@@ -101,7 +101,11 @@
   font-weight: 700;
   color: @main-gray;
   margin: 0;
-  padding-bottom: 4px;
+  padding-bottom: 0;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 4px;
+  }
 
   @media (min-width: @desktop-width) {
     padding-bottom: 22px;
@@ -141,7 +145,7 @@
     width: 320px;
     height: 123px;
     position: absolute;
-    top: -59px;
+    top: -74px;
     display: flex;
     justify-content: center;
     margin: auto;
@@ -154,6 +158,7 @@
 
     &::before {
       width: 660px;
+      top: -59px;
     }
   }
 
@@ -161,8 +166,8 @@
     height: 520px;
 
     &::before {
-      width: 1200px;
-      top: 0;
+      width: 100%;
+      top: -1px;
     }
   }
 }
