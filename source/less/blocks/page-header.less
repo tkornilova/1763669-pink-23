@@ -209,10 +209,6 @@
 }
 
 .page-header__wrapper-logo {
-  & svg {
-    fill: @basic-white;
-  }
-
   &:hover svg,
   &:focus svg {
     fill: @pink;
@@ -244,14 +240,22 @@
   }
 }
 
+
 .page-header__logo-pink-desktop {
   display: none;
 
   @media (min-width: @desktop-width) {
-    fill: @basic-white;
     display: block;
     width: 147px;
     height: 40px;
+
+    & .logo-pink-desktop-white {
+      fill: @basic-white;
+    }
+
+    & .logo-pink-desktop-pink {
+      fill: @pink;
+    }
   }
 }
 
