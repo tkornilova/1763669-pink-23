@@ -9,7 +9,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0;
+    margin-bottom: 52px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -24,18 +26,16 @@
 
   @media (min-width: @tablet-width) {
     width: 616px;
-    padding-bottom: 65px;
+    padding-bottom: 52px;
     padding-left: 0;
     padding-right: 0;
+    padding-top: 0;
   }
 
   @media (min-width: @desktop-width) {
     width: 431px;
     background-color: transparent;
-    padding-top: 0;
-    padding-bottom: 64px;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
     box-sizing: border-box;
     order: 3;
   }
@@ -44,10 +44,10 @@
 .user-app__fieldset-wrapper {
   @media (min-width: @desktop-width) {
     width: 200px;
-    padding-top: 66px;
-    padding-bottom: 66px;
-    padding-left: 133px;
-    padding-right: 98px;
+    padding-top: 42px;
+    padding-bottom: 58px;
+    padding-left: 129px;
+    padding-right: 92px;
   }
 }
 
@@ -58,13 +58,17 @@
 
   @media (min-width: @tablet-width) {
     border: 2px solid @gray-table-border;
-    padding: 66px 120px;
+    padding-top: 43px;
+    padding-bottom: 58px;
+    padding-left: 77px;
+    padding-right: 77px;
     box-sizing: border-box;
   }
 
   @media (min-width: @desktop-width) {
     padding: 0;
     width: 431px;
+    min-height: 297px;
     border: 2px solid @gray-table-border;
   }
 }
@@ -74,7 +78,7 @@
   line-height: 18px;
   color: @pink;
   text-transform: uppercase;
-  padding-bottom: 52px;
+  padding-bottom: 36px;
   text-align: center;
   box-sizing: border-box;
 
@@ -90,15 +94,15 @@
 
 .user-app__fieldset p {
   margin: 0;
-  padding-left: 25px;
-  padding-bottom: 62px;
+  padding-left: 28px;
+  padding-bottom: 45px;
 
   @media (min-width: @tablet-width) {
     padding-left: 0;
   }
 
   @media (min-width: @desktop-width) {
-    padding-bottom: 31px;
+    padding-bottom: 46px;
   }
 }
 
@@ -118,14 +122,21 @@
   }
 }
 
-
 .user-app__fieldset-label::before {
   content: url("../../img/button-radio-empty.svg");
   width: 37px;
   height: 37px;
   position: absolute;
-  left: -60px;
+  left: -30px;
   top: -8px;
+
+  @media (min-width: @tablet-width) {
+    left: -21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: -61px;
+  }
 }
 
 .user-app__fieldset-label:hover::before,
@@ -134,8 +145,16 @@
   width: 37px;
   height: 37px;
   position: absolute;
-  left: -60px;
+  left: -30px;
   top: -8px;
+
+  @media (min-width: @tablet-width) {
+    left: -21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: -61px;
+  }
 }
 
 .user-app__fieldset-label:active::before {
@@ -143,8 +162,16 @@
   width: 37px;
   height: 37px;
   position: absolute;
-  left: -60px;
+  left: -30px;
   top: -8px;
+
+  @media (min-width: @tablet-width) {
+    left: -21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: -61px;
+  }
 }
 
 .user-app__fieldset-input:checked + .user-app__fieldset-label::before {
@@ -152,8 +179,16 @@
   width: 37px;
   height: 37px;
   position: absolute;
-  left: -60px;
+  left: -30px;
   top: -8px;
+
+  @media (min-width: @tablet-width) {
+    left: -21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: -61px;
+  }
 }
 
 .user-app__fieldset-input:checked + .user-app__fieldset-label:hover::before,
@@ -162,8 +197,16 @@
   width: 37px;
   height: 37px;
   position: absolute;
-  left: -60px;
+  left: -30px;
   top: -8px;
+
+  @media (min-width: @tablet-width) {
+    left: -21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: -61px;
+  }
 }
 
 .user-app__fieldset-input:checked + .user-app__fieldset-label:focus::before {
@@ -171,6 +214,14 @@
   width: 37px;
   height: 37px;
   position: absolute;
-  left: -60px;
+  left: -30px;
   top: -8px;
+
+  @media (min-width: @tablet-width) {
+    left: -21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: -61px;
+  }
 }
