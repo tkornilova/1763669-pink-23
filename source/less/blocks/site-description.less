@@ -61,6 +61,7 @@
 
 .site-description__slogan-wrapper-bg {
   width: 320px;
+  min-height: 462px;
   background-image: url("../../img/header-bg-phone.png");
   background-repeat: no-repeat;
   background-position: -171px 176px;
@@ -87,9 +88,19 @@
   }
 }
 
-.site-description__slogan br {
-  @media (max-width: @mobile-width-only) {
+.site-description__slogan {
+  & br:first-of-type {
     display: none;
+  }
+
+  & br:nth-of-type(2) {
+    display: block;
+  }
+
+  @media (min-width: @tablet-width) {
+    & br:first-of-type {
+      display: block;
+    }
   }
 }
 
@@ -112,7 +123,7 @@
     font-size: 40px;
     line-height: 48px;
     padding-top: 205px;
-    padding-left: 41px;
+    padding-left: 46px;
     padding-right: 360px;
     box-sizing: border-box;
   }
@@ -121,8 +132,8 @@
     width: 1200px;
     font-size: 50px;
     line-height: 68px;
-    padding-top: 210px;
-    padding-left: 128px;
+    padding-top: 208px;
+    padding-left: 137px;
     padding-right: 766px;
     box-sizing: border-box;
   }

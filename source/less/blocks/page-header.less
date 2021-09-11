@@ -10,18 +10,14 @@
   @media (min-width: @tablet-width) {
     height: 110px;
   }
-
-  @media (min-width: @desktop-width) {
-    height: 110px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
 }
 
 .page-header__wrapper {
   @media (min-width: @desktop-width) {
     background-color: @basic-black-opacity30;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -47,10 +43,10 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: auto;
-    padding: 0;
     margin: 0;
     display: block;
+    padding-left: 0;
+    padding-right: 170px;
   }
 }
 
@@ -83,28 +79,27 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 1200px;
+    width: 940px;
     background-color: transparent;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 43px 130px;
-    box-sizing: border-box;
+    margin: 19px auto 25px;
+    padding: 0 130px;
   }
 }
 
 .page-header__wrapper--closed {
   @media (min-width: @desktop-width) {
-    width: 1200px;
+    width: 940px;
     background-color: transparent;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 43px 130px;
-    margin: 0 auto;
-    box-sizing: border-box;
+    margin: 19px auto 25px;
+    padding: 0 130px;
   }
 }
 
@@ -209,12 +204,12 @@
 }
 
 .page-header__wrapper-logo {
-  &:hover svg,
-  &:focus svg {
+  &:hover .page-header__logo-pink,
+  &:focus .page-header__logo-pink {
     fill: @pink;
   }
 
-  &:active svg {
+  &:active .page-header__logo-pink {
     fill: @basic-white-opacity30;
   }
 }
@@ -232,6 +227,7 @@
 
 .page-header__logo-pink-tablet {
   display: none;
+  fill: @basic-white;
 
   @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
     display: block;
@@ -240,7 +236,6 @@
   }
 }
 
-
 .page-header__logo-pink-desktop {
   display: none;
 
@@ -248,17 +243,14 @@
     display: block;
     width: 147px;
     height: 40px;
+    fill: @basic-white;
 
-    & .logo-pink-desktop-white {
-      fill: @basic-white;
-    }
-
-    & .logo-pink-desktop-pink {
+    &:hover,
+    &:focus {
       fill: @pink;
     }
   }
 }
-
 
 .page-header__wrapper button {
   border: none;
@@ -282,6 +274,10 @@
 
   &:active svg {
     opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    align-self: flex-end;
   }
 
   @media (min-width: @desktop-width) {

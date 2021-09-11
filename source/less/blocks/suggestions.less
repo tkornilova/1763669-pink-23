@@ -60,20 +60,23 @@
 }
 
 .suggestions__wrapper {
+  min-height: 780px;
   background-image: url("../../img/suggestions-bg.png"), url("../../img/gray-bg.png");
   background-color: @basic-white;
   background-repeat: no-repeat;
-  background-position: 50% 507px, 0 -64px;
-  background-size: 157px 320px, 777px auto;
+  background-position: 50% 507px,0 bottom;
+  background-size: 157px 320px,auto 874px;
   margin: 0 auto;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../img/suggestions-bg@2x.png"), url("../../img/gray-bg@2x.png");
+    background-size: 157px 320px,auto 846px;
   }
 
   @media (min-width: @tablet-width) {
     background-position: 0 -23px;
     background-size: cover;
+    min-height: 482px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/gray-bg@2x.png");
@@ -97,7 +100,7 @@
 .suggestions__list {
   width: 320px;
   padding-top: 79px;
-  padding-bottom: 315px;
+  padding-bottom: 284px;
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
@@ -108,7 +111,7 @@
   @media (min-width: @tablet-width) {
     width: 660px;
     padding-left: 330px;
-    padding-bottom: 39px;
+    padding-bottom:7px;
     padding-top: 73px;
     text-align: left;
 
@@ -123,11 +126,11 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 883px;
+    width: 882px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 367px;
+    padding-top: 363px;
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 0;
@@ -154,7 +157,11 @@
   margin: 0 auto;
 
   &:last-child {
-    padding: 0;
+    padding-left: 0;
+  }
+
+  & br {
+    display: none;
   }
 
   @media (min-width: @tablet-width) {
@@ -162,16 +169,16 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 252px;
-    padding-right: 45px;
+    width: min-content;
+    padding-right: 0;
     margin: 0;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    &:last-child {
-      padding: 0;
+    & br {
+      display: block;
     }
   }
 }
