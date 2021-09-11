@@ -6,7 +6,7 @@
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    padding-top: 100px;
+    padding-top: 91px;
     padding-bottom: 50px;
   }
 
@@ -21,22 +21,23 @@
   line-height: 30px;
   text-align: center;
   padding-bottom: 50px;
-  padding-left: 35px;
-  padding-right: 35px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     width: 600px;
     font-size: 18px;
-    padding-bottom: 85px;
+    padding-bottom: 77px;
     padding-left: 45px;
     padding-right: 45px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-bottom: 97px;
-    padding-left: 280px;
-    padding-right: 280px;
+    padding-bottom: 89px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -99,11 +100,10 @@
   border: none;
   padding: 6px 21px;
   box-sizing: border-box;
-  margin-right: 20px;
+  margin-right: 18px;
 
   @media (min-width: @tablet-width) {
     margin-top: 57px;
-    margin-right: 20px;
   }
 
   @media (min-width: @desktop-width) {
@@ -121,18 +121,28 @@
   flex-wrap: wrap;
   background-color: @gray-light;
   margin: 0 auto;
-  padding: 20px 17px;
+  padding-left: 17px;
+  padding-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     width: 620px;
-    padding: 31px 30px;
+    padding: 23px 30px;
     flex-direction: row;
+
+    & br {
+      display: none;
+    }
   }
 
   @media (min-width: @desktop-width) {
     width: 940px;
-    padding: 31px 29px;
+    padding-left: 28px;
+    padding-right: 32px;
+    padding-top: 24px;
+    padding-bottom: 22px;
     flex-direction: row;
     margin: 0 auto;
   }

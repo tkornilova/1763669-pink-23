@@ -1,5 +1,5 @@
 .user-pic__list {
-  width: 320px;
+  width: 280px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -10,13 +10,11 @@
   @media (min-width: @tablet-width) {
     width: 620px;
     margin: 0 auto;
-    padding-bottom: 73px;
   }
 
   @media (min-width: @desktop-width) {
     width: 940px;
     margin: 0 auto;
-    padding-bottom: 67px;
   }
 }
 
@@ -28,6 +26,10 @@
 
   @media (min-width: @tablet-width) {
     margin-right: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 53px;
   }
 }
 
@@ -67,7 +69,17 @@
 }
 
 .user-pic__item-wrapper {
-  padding: 18px 17px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 17px;
+  padding-right: 25px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 25px;
+    padding-bottom: 23px;
+    padding-left: 30px;
+    padding-right: 28px;
+  }
 }
 
 .user-pic__item p {
@@ -114,9 +126,18 @@
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    justify-content: space-between;
+  }
 }
 
 .user-pic__item-bottom-like {
   order: -1;
   margin-right: 18px;
+
+  @media (min-width: @tablet-width) {
+    order: 0;
+    margin: 0;
+  }
 }
