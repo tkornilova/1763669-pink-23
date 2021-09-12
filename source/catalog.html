@@ -278,6 +278,7 @@
                     <use xlink:href="img/sprite.svg#icon-crop"></use>
                   </svg>
                   <div class="editor__photo-parameters-crop-scale">
+                    <label for="crop" class="visually-hidden">Обрезать фото</label>
                     <input class="editor__photo-parameters-scale editor__photo-parameters-crop-bar" type="range" id="crop" value="85">
                   </div>
               </li>
@@ -286,6 +287,7 @@
                   <use xlink:href="img/sprite.svg#icon-fill"></use>
                 </svg>
                 <div class="editor__photo-parameters-fill-scale">
+                  <label for="fill" class="visually-hidden">Заливка фото</label>
                   <input class="editor__photo-parameters-scale editor__photo-parameters-fill-bar" type="range" id="fill" value="15">
                 </div>
               </li>
@@ -294,10 +296,12 @@
                   <use xlink:href="img/sprite.svg#icon-contrast"></use>
                 </svg>
                 <div class="editor__photo-parameters-contrast-scale">
+                  <label for="contrast" class="visually-hidden">Контраст</label>
                   <input class="editor__photo-parameters-scale editor__photo-parameters-contrast-bar" type="range" id="contrast" value="50">
                 </div>
               </li>
             </ul>
+            <label for="general" class="visually-hidden">Изменить параметер</label>
             <input class="editor__photo-parameters-scale editor__photo-parameters-general-bar" type="range" id="general" value="86">
             <div class="editor__button">
               <button class="editor__button-post">Запостить</button>
