@@ -92,7 +92,7 @@
   }
 }
 
-.reviws__wrapper-comment {
+.reviews__wrapper-comment {
   @media (min-width: @desktop-width) {
     width: 940px;
     display: flex;
@@ -114,11 +114,15 @@
     cursor: pointer;
     padding: 0;
     background-color: transparent;
-    opacity: 0.5;
+
+    & svg {
+      fill: @main-gray;
+      opacity: 0.5;
+    }
 
     &:hover svg,
     &:focus svg {
-      opacity: initial;
+      opacity: 1;
     }
 
     &:focus svg {
