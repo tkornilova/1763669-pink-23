@@ -6,7 +6,7 @@
   align-items: center;
   margin: 0 auto;
   padding-top: 0;
-  padding-bottom: 26px;
+  padding-bottom: 17px;
   padding-left: 22px;
   padding-right: 22px;
   box-sizing: border-box;
@@ -15,7 +15,7 @@
   @media (min-width: @tablet-width) {
     width: 660px;
     flex-direction: row;
-    padding-bottom: 50px;
+    padding-bottom: 51px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -38,7 +38,7 @@
   border: none;
   background-color: @green;
   text-transform: uppercase;
-  margin-bottom: 46px;
+  margin-bottom: 36px;
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
@@ -73,6 +73,15 @@
   padding: 0;
 }
 
-.form-button span {
+.form-button__pink {
   color: @pink;
+}
+
+.form-button__hidden {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: inline-block;
+    vertical-align: baseline;
+  }
 }

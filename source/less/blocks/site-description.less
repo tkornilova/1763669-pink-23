@@ -2,34 +2,35 @@
   @media (min-width: @tablet-width) {
     width: 100%;
     min-height: 729px;
-    background-image: url("../../img/header-bg-phone.png"), url("../../img/header-bg.jpg");
+    background-image: url("../../img/header-bg.jpg");
     background-repeat: no-repeat;
-    background-position: -113px 184px, center;
-    background-size: 891px auto, cover;
+    background-position: center;
+    background-size: cover;
     background-color: @main-gray;
     margin: 0 auto;
   }
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/header-bg-phone@2x.png"), url("../../img/header-bg@2x.jpg");
+    background-image: url("../../img/header-bg@2x.jpg");
   }
 
   @media (min-width: @desktop-width) {
     min-height: 853px;
-    background-size: auto 640px, cover;
-    background-position: 151px 211px, bottom;
+    background-position: bottom;
   }
 }
 
 .site-description-main__wrapper {
   @media (min-width: @tablet-width) {
     width: 660px;
+    min-height: 729px;
     margin: 0 auto;
     position: relative;
   }
 
   @media (min-width: @desktop-width) {
     width: 1200px;
+    min-height: 853px;
   }
 }
 
@@ -48,30 +49,58 @@
   }
 
   @media (min-width: @tablet-width) {
+    min-height: 729px;
     background-image: none;
     background-color: transparent;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 853px;
   }
 }
 
 .site-description__slogan-wrapper-bg {
-  @media (max-width: @mobile-width-only) {
-    width: 320px;
-    background-image: url("../../img/header-bg-phone.png");
-    background-repeat: no-repeat;
-    background-position: -171px 176px;
-    background-size: auto 312px;
-    background-color: transparent;
-    margin: 0 auto;
+  width: 320px;
+  min-height: 462px;
+  background-image: url("../../img/header-bg-phone.png");
+  background-repeat: no-repeat;
+  background-position: -171px 176px;
+  background-size: auto 312px;
+  background-color: transparent;
+  margin: 0 auto;
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../img/header-bg-phone@2x.png");
-    }
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/header-bg-phone@2x.png");
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
+    min-height: 729px;
+    background-position: -113px 184px;
+    background-size: 891px auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    min-height: 853px;
+    background-size: auto 643px, cover;
+    background-position: 148px 208px, bottom;
   }
 }
 
-.site-description__slogan br {
-  @media (max-width: @mobile-width-only) {
+.site-description__slogan {
+  & br:first-of-type {
     display: none;
+  }
+
+  & br:nth-of-type(2) {
+    display: block;
+  }
+
+  @media (min-width: @tablet-width) {
+    & br:first-of-type {
+      display: block;
+    }
   }
 }
 
@@ -94,7 +123,7 @@
     font-size: 40px;
     line-height: 48px;
     padding-top: 205px;
-    padding-left: 41px;
+    padding-left: 46px;
     padding-right: 360px;
     box-sizing: border-box;
   }
@@ -103,8 +132,8 @@
     width: 1200px;
     font-size: 50px;
     line-height: 68px;
-    padding-top: 210px;
-    padding-left: 128px;
+    padding-top: 208px;
+    padding-left: 137px;
     padding-right: 766px;
     box-sizing: border-box;
   }
@@ -122,12 +151,12 @@
     height: 232px;
     padding: 0;
     position: absolute;
-    bottom: 47px;
+    bottom: 119px;
     left: 19px;
   }
 
   @media (min-width: @desktop-width) {
-    bottom: 41px;
+    bottom: 172px;
     left: 130px;
   }
 }
@@ -167,7 +196,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 67px;
+    margin-bottom: 68px;
     font-size: 21px;
   }
 }
@@ -188,6 +217,10 @@
   padding: 0;
 
   @media (min-width: @tablet-width) {
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
     margin-bottom: 44px;
   }
 }
@@ -251,7 +284,7 @@
   font-weight: 300;
   color: @basic-white;
   text-align: center;
-  padding-top: 102px;
+  padding-top: 95px;
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 20px;
@@ -261,13 +294,13 @@
   @media (min-width: @tablet-width) {
     font-size: 50px;
     line-height: 68px;
-    padding-top: 191px;
+    padding-top: 177px;
     padding-left: 80px;
     padding-right: 80px;
     padding-bottom: 50px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 184px;
+    padding-top: 170px;
   }
 }
